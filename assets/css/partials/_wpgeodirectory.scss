@@ -60,14 +60,9 @@ body.single-gd_loan_officer {
 		}
 	}
 
-	.contact-info {
-		margin-bottom: 10px;
+	.lo-contact-info {}
 
-		a {
-			color: #174170 !important;
-			transition: color 300ms ease 0ms;
-		}
-	}
+
 
 	.lo-single-socials {
 		.geodir_post_meta {
@@ -208,6 +203,26 @@ body.single-gd_loan_officer {
 					}
 				}
 			}
+            .geodir_post_meta {
+                margin-bottom: 0;
+            }
+			.gd-badge-meta-view-map {
+				margin: 0;
+
+				.gd-badge {
+					padding: 0
+				}
+			}
+		}
+
+		.contact-info {
+			margin-bottom: 10px;
+
+			a {
+				color: #174170 !important;
+				transition: color 300ms ease 0ms;
+			}
+
 		}
 	}
 }

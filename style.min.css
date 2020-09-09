@@ -56,7 +56,9 @@ body.single-gd_loan_officer .gd-badge-meta.chm-cta a:hover{background-color:#00a
 body.single-gd_loan_officer .gd-badge-meta.chm-cta a .gd-badge{font-size:20px;font-weight:500;text-align:center}
 body.single-gd_loan_officer .contact-info{margin-bottom:10px}
 body.single-gd_loan_officer .contact-info a{color:#174170 !important;-webkit-transition:color 300ms ease 0ms;transition:color 300ms ease 0ms}
-body.single-gd_loan_officer .lo-single-socials .geodir_post_meta{margin-bottom:10px}
+body.single-gd_loan_officer .lo-single-socials .geodir_post_meta{margin-bottom:10px;display:inline-block}
+body.single-gd_loan_officer .lo-single-socials i{font-size:18px;line-height:36px;height:36px;width:36px;background-color:#595959 !important;border-radius:50% 50% 50% 50%;color:#FFF}
+body.single-gd_loan_officer .lo-single-socials strong{display:none}
 body.single-gd_loan_officer .awards-and-recognition h4{font-size:32px;color:#174170 !important;padding-bottom:1em}
 body.single-gd_loan_officer .awards-and-recognition .geodir-image-container.gd-image-cover-n ul.geodir-images li{border:1px solid transparent}
 body.single-gd_loan_officer .comment-form a{color:#174170}

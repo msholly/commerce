@@ -11,6 +11,7 @@
 		margin-right: 7px;
 	}
 }
+
 /* WP Geo Directory LO Pages */
 body.single-gd_loan_officer {
 	.lo-main-image {
@@ -32,30 +33,33 @@ body.single-gd_loan_officer {
 		}
 	}
 
-    .gd-badge-meta.chm-cta {
-        display: block;
-        a {
-            background-color: #174170;
-            border-width: 1px !important;
-            border-radius: 33px;
-            width: 80%;
-            transition: all 300ms ease 0ms;
-            padding: .3em 1em !important;
-            min-height: 46px;
-            display: block;
-            text-align: center;
-            margin: 0 auto;
-            &:hover {
-                background-color: #00aade !important;
-            }
-            .gd-badge {
-                font-size: 20px;
-                font-weight: 500;
-                text-align: center;
-            }
-        }
-    }
-    
+	.gd-badge-meta.chm-cta {
+		display: block;
+
+		a {
+			background-color: #174170;
+			border-width: 1px !important;
+			border-radius: 33px;
+			width: 80%;
+			transition: all 300ms ease 0ms;
+			padding: .3em 1em !important;
+			min-height: 46px;
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+
+			&:hover {
+				background-color: #00aade !important;
+			}
+
+			.gd-badge {
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+			}
+		}
+	}
+
 	.contact-info {
 		margin-bottom: 10px;
 
@@ -68,7 +72,23 @@ body.single-gd_loan_officer {
 	.lo-single-socials {
 		.geodir_post_meta {
 			margin-bottom: 10px;
+			display: inline-block;
 		}
+
+		i {
+			font-size: 18px;
+			line-height: 36px;
+			height: 36px;
+			width: 36px;
+			background-color: #595959 !important;
+			border-radius: 50% 50% 50% 50%;
+			color: #FFF
+		}
+
+		strong {
+			display: none;
+		}
+
 	}
 
 	.awards-and-recognition {

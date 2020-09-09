@@ -1,0 +1,207 @@
+/* GEO DIRECTORY */
+/* WP Geo Directory Archive Pages */
+.geodir-post-meta-container {
+	display: inline;
+}
+
+.geodir_post_meta_icon {
+	i {
+		min-width: 16px;
+		text-align: center;
+		margin-right: 7px;
+	}
+}
+/* WP Geo Directory LO Pages */
+body.single-gd_loan_officer {
+	.lo-main-image {
+		.et_pb_image_wrap {
+			max-height: 250px;
+			max-width: 250px;
+		}
+	}
+
+	.lead {
+		h3 {
+			padding-bottom: 1em;
+			line-height: 1.5em;
+		}
+
+		p {
+			line-height: 2em;
+			font-size: 16px;
+		}
+	}
+
+    .gd-badge-meta.chm-cta {
+        display: block;
+        a {
+            background-color: #174170;
+            border-width: 1px !important;
+            border-radius: 33px;
+            width: 80%;
+            transition: all 300ms ease 0ms;
+            padding: .3em 1em !important;
+            min-height: 46px;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            &:hover {
+                background-color: #00aade !important;
+            }
+            .gd-badge {
+                font-size: 20px;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+    }
+    
+	.contact-info {
+		margin-bottom: 10px;
+
+		a {
+			color: #174170 !important;
+			transition: color 300ms ease 0ms;
+		}
+	}
+
+	.lo-single-socials {
+		.geodir_post_meta {
+			margin-bottom: 10px;
+		}
+	}
+
+	.awards-and-recognition {
+		h4 {
+			font-size: 32px;
+			color: #174170 !important;
+			padding-bottom: 1em;
+		}
+
+		.geodir-image-container.gd-image-cover-n {
+			ul.geodir-images {
+				li {
+					border: 1px solid transparent;
+				}
+			}
+		}
+	}
+
+	.comment-form {
+		a {
+			color: #174170;
+		}
+	}
+
+	.geodir-linked-posts {
+		.widgettitle {
+			font-size: 32px;
+			color: #ffffff !important;
+			text-align: center;
+		}
+	}
+
+	.geodir-listings {
+		h4 {
+			margin-top: 25px;
+			font-weight: 600;
+			font-size: 24px;
+			color: #174170 !important;
+			padding: 0;
+		}
+	}
+
+	.geodir-category-list-view {
+		.gd_lo_team {
+			.geodir-post-image {
+				li {
+					border-radius: 50% 50% 50% 50%;
+					overflow: hidden;
+					border: 2px solid #FFF;
+					margin: 0 auto;
+					width: 160px;
+					height: 160px;
+					margin-bottom: 1.5em;
+				}
+
+				text-align: center;
+			}
+
+			h2 {
+				font-size: 23px;
+				color: #ffffff !important;
+				text-align: center;
+				padding-bottom: 10px;
+				line-height: 1em;
+				font-weight: 500;
+			}
+
+			.geodir-field-team_job_title {
+				font-size: 15px;
+				color: #ffffff !important;
+				margin-bottom: 1em;
+				text-align: center;
+				margin-top: 0;
+			}
+
+			.gd-badge-meta-see-full-profile {
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+
+	.lo-my-team {
+		.geodir-category-list-view {
+			text-align: center;
+		}
+	}
+
+	.geodir_location_listing {
+		.geodir-field-city {
+			display: inline;
+		}
+
+		.geodir-field-region {
+			display: inline;
+		}
+
+		.geodir-field-zip {
+			display: inline;
+		}
+
+		.geodir-post-meta-container {
+			font-size: 14px;
+			line-height: normal;
+		}
+	}
+
+	.lo-contact-info {
+		.geodir_location_listing {
+			.geodir-post-title {
+				h2 {
+					a {
+						font-size: 18px;
+						font-weight: 500;
+						margin: 15px 0 10px 0;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+body.post-type-archive-gd_place {
+	.geodir-field-city {
+		display: inline;
+	}
+
+	.geodir-field-region {
+		display: inline;
+	}
+
+	.geodir-field-zip {
+		display: inline;
+	}
+}

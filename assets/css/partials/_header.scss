@@ -1,0 +1,59 @@
+/*** hides sub-menu on hover ***/
+#et-top-navigation #top-menu li.et-hover ul.sub-menu {
+	display: none !important;
+}
+
+/*** shows submenu on click ***/
+#et-top-navigation #top-menu li.show-submenu ul.sub-menu {
+	display: block !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+/*** Hide hamburger menu item on mobile ***/
+.et_mobile_menu .mega-menu>a {
+	display: none;
+}
+
+
+#top-menu .mega-menu>a,
+#et-secondary-nav .mega-menu>a {
+	padding-bottom: 24px !important;
+}
+
+/**** hide down arrow ****/
+#top-menu .mega-menu>a:first-child:after,
+#et-secondary-nav .menu-item-has-children>a:first-child:after {
+	display: none;
+}
+
+/*** show hamburger icon ***/
+.hamburger:after {
+	font-family: "ETmodules" !important;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 0.6em;
+	text-transform: none;
+	speak: none;
+	position: relative;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	vertical-align: -8px;
+	padding-right: 3px;
+	font-size: 32px;
+	/*change size of icon here*/
+	content: "\61";
+	/*change icon here*/
+	color: #fff;
+	/*change color of icon here*/
+}
+
+/*** displays the "x" close icon ***/
+.show-submenu .hamburger:after {
+	content: "\4d";
+	/*change x icon here*/
+}

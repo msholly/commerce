@@ -1,0 +1,51 @@
+/*------------------------------------------------*/
+/*------------------[HOMEPAGE]--------------------*/
+/*------------------------------------------------*/
+
+
+/*** 3D Flip Effect ***/
+/* .dotstyle-flip .et-pb-controllers a {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.dotstyle-flip .et-pb-controllers a {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.dotstyle-flip .et-pb-controllers a {
+    background-color: transparent;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+}
+.dotstyle-flip .et-pb-controllers a::before,
+.dotstyle-flip .et-pb-controllers a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+    content: '';
+    text-indent: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.dotstyle-flip .et-pb-controllers a::after {
+    background-color: #c0c0c0;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.dotstyle-flip .et-pb-controllers a:hover,
+.dotstyle-flip .et-pb-controllers a:focus {
+    opacity: 0.8;
+}
+.dotstyle-flip .et-pb-controllers a.et-pb-active-control {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+} */
+/*** END 3D Flip Effect ***/

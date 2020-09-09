@@ -1,3 +1,29 @@
+#main-header>.container{max-width:1896px}
+.menu-button{padding:0 !important}
+.menu-button a{border:1px #fff solid !important;padding:10px 15px !important;margin-right:22px}
+#top-menu li.menu-button a:hover{border:1px #00aade solid !important;text-decoration:none !important}
+#et-top-navigation{font-weight:500}
+.et_mobile_menu,.nav li ul{border-top:1px solid #fff}
+#top-menu li li a{font-size:16px !important;font-weight:normal;padding:3px 6px}
+#top-menu li a:hover{opacity:1 !important}
+#top-menu li a:hover,#top-menu li li a:hover{color:#00aade !important}
+#top-menu a:hover,#top-menu a:focus,#top-menu li.current-page-parent a::before{color:#00aade}
+#top-menu a:hover::before,#top-menu a:focus::before,#top-menu li.current-page-parent a::before,#mobile_menu a:hover::before,#mobile_menu a:focus::before,#mobile_menu li.current-page-parent a::before{opacity:1}
+.et_header_style_left #et-top-navigation{padding-top:16px !important}
+.et_header_style_left .et-fixed-header #et-top-navigation{padding-top:6px !important}
+‪#top-menu .menu-item-has-children>a:first-child{padding-right:22px;padding-bottom:17px !important}
+#top-menu .menu-item-has-children>a:first-child:after{content:'';margin-top:-2px}
+#top-menu .menu-item-has-children{padding-right:0}
+#et-top-navigation #top-menu li.show-submenu ul.sub-menu{padding-left:30px}
+#et-top-navigation #top-menu li.et-hover ul.sub-menu{display:none !important}
+#et-top-navigation #top-menu li.show-submenu ul.sub-menu{display:block !important;visibility:visible !important;opacity:1 !important}
+.et_mobile_menu .mega-menu>a{display:none}
+#top-menu .mega-menu>a,#et-secondary-nav .mega-menu>a{padding-bottom:24px !important}
+#top-menu .mega-menu>a:first-child:after,#et-secondary-nav .menu-item-has-children>a:first-child:after{display:none}
+.hamburger:before{content:"MENU"}
+.hamburger:after{font-family:"ETmodules" !important;font-weight:normal;font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:.6em;text-transform:none;speak:none;position:relative;cursor:pointer;top:0;left:0;vertical-align:-9px;padding-right:3px;font-size:32px;content:"\61";color:#fff;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+.hamburger:hover:after{color:#00aade}
+.show-submenu .hamburger:after{content:"\4d";color:#00aade}
 #et-top-navigation #top-menu li.et-hover ul.sub-menu{display:none !important}
 #et-top-navigation #top-menu li.show-submenu ul.sub-menu{display:block !important;visibility:visible !important;opacity:1 !important}
 .et_mobile_menu .mega-menu>a{display:none}
@@ -5,6 +31,20 @@
 #top-menu .mega-menu>a:first-child:after,#et-secondary-nav .menu-item-has-children>a:first-child:after{display:none}
 .hamburger:after{font-family:"ETmodules" !important;font-weight:normal;font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:.6em;text-transform:none;speak:none;position:relative;cursor:pointer;top:0;left:0;vertical-align:-8px;padding-right:3px;font-size:32px;content:"\61";color:#fff}
 .show-submenu .hamburger:after{content:"\4d"}
+#left-area ul,.comment-content ul,.entry-content ul,.et-l--body ul,.et-l--footer ul,.et-l--header ul,body.et-pb-preview #main-content .container ul{list-style-type:none;padding:0 0 23px 0;line-height:26px}
+.d-none{display:none !important}
+.d-inline{display:inline !important}
+.d-inline-block{display:inline-block !important}
+.d-block{display:block !important}
+.d-table{display:table !important}
+.d-table-row{display:table-row !important}
+.d-table-cell{display:table-cell !important}
+.d-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
+.d-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
+.flex-row-wrapper .et_pb_column{display:-webkit-box;display:-ms-flexbox;display:flex}
+.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post{width:100%}
+.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-featured-image-url{width:30%;float:left}
+.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-title,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-meta,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-content{width:67%;float:right}
 .geodir-post-meta-container{display:inline}
 .geodir_post_meta_icon i{min-width:16px;text-align:center;margin-right:7px}
 body.single-gd_loan_officer .lo-main-image .et_pb_image_wrap{max-height:250px;max-width:250px}
@@ -36,3 +76,54 @@ body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-po
 body.post-type-archive-gd_place .geodir-field-city{display:inline}
 body.post-type-archive-gd_place .geodir-field-region{display:inline}
 body.post-type-archive-gd_place .geodir-field-zip{display:inline}
+@media(min-width:576px){.d-sm-none{display:none !important}
+.d-sm-inline{display:inline !important}
+.d-sm-inline-block{display:inline-block !important}
+.d-sm-block{display:block !important}
+.d-sm-table{display:table !important}
+.d-sm-table-row{display:table-row !important}
+.d-sm-table-cell{display:table-cell !important}
+.d-sm-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
+.d-sm-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
+}@media(min-width:768px){.d-md-none{display:none !important}
+.d-md-inline{display:inline !important}
+.d-md-inline-block{display:inline-block !important}
+.d-md-block{display:block !important}
+.d-md-table{display:table !important}
+.d-md-table-row{display:table-row !important}
+.d-md-table-cell{display:table-cell !important}
+.d-md-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
+.d-md-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
+}@media(min-width:992px){.d-lg-none{display:none !important}
+.d-lg-inline{display:inline !important}
+.d-lg-inline-block{display:inline-block !important}
+.d-lg-block{display:block !important}
+.d-lg-table{display:table !important}
+.d-lg-table-row{display:table-row !important}
+.d-lg-table-cell{display:table-cell !important}
+.d-lg-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
+.d-lg-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
+}@media(min-width:1200px){.d-xl-none{display:none !important}
+.d-xl-inline{display:inline !important}
+.d-xl-inline-block{display:inline-block !important}
+.d-xl-block{display:block !important}
+.d-xl-table{display:table !important}
+.d-xl-table-row{display:table-row !important}
+.d-xl-table-cell{display:table-cell !important}
+.d-xl-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
+.d-xl-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
+}@media(max-width:1180px){#et_mobile_nav_menu{display:block}
+#top-menu{display:none}
+}@media screen and (max-width:981px){.flex-row-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+}@media only screen and (max-width:980px){.et_pb_row{width:90%}
+}@media all and (max-width:479px){.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-featured-image-url,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-title,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-meta,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-content{width:100%;float:none}
+}@media print{.d-print-none{display:none !important}
+.d-print-inline{display:inline !important}
+.d-print-inline-block{display:inline-block !important}
+.d-print-block{display:block !important}
+.d-print-table{display:table !important}
+.d-print-table-row{display:table-row !important}
+.d-print-table-cell{display:table-cell !important}
+.d-print-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
+.d-print-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
+}

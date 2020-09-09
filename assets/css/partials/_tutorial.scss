@@ -1,0 +1,44 @@
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*--[ADD TUTORIAL CUSTOMIZATION BELOW THIS LINE]--*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+.flex-row-wrapper .et_pb_column {
+	display: flex;
+}
+
+@media screen and (max-width: 981px) {
+	.flex-row-wrapper {
+		flex-direction: column;
+	}
+}
+
+/* The CSS for having the featured image on the left */
+.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post {
+	width: 100%;
+}
+
+.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-featured-image-url {
+	width: 30%;
+	float: left;
+}
+
+.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-title,
+.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-meta,
+.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-content {
+	width: 67%;
+	float: right;
+}
+
+@media all and (max-width: 479px) {
+
+	.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-featured-image-url,
+	.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-title,
+	.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-meta,
+	.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-content {
+		width: 100%;
+		float: none;
+	}
+}

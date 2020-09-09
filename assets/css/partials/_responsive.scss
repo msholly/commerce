@@ -1,0 +1,10 @@
+/*------------------------------------------------*/
+/*--------------------[RESPONSIVE]----------------*/
+/*------------------------------------------------*/
+/*** MAKE SITE WIDER ON SMALLER SCREENS ***/
+@media only screen and (max-width: 980px) {
+    .et_pb_row {
+        width: 90%;
+        /*** you might need !important ***/
+    }
+}

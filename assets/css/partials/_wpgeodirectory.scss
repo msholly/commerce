@@ -1,12 +1,19 @@
 /* GEO DIRECTORY */
-/* GLOBAL */
-.gd-suggestions-dropdown ul {
-	padding: 0;
-
-	li {
-		padding: 5px 10px;
-	}
+/* Search */
+.geodir-loc-bar {
+    padding: 10px 0 10px 0;
+    border-top: 1px transparent solid;
+    border-bottom: 1px transparent solid;
+    margin: 20px 0;
+    .gd-suggestions-dropdown ul {
+        padding: 0;
+    
+        li {
+            padding: 5px 10px;
+        }
+    }
 }
+
 
 /* WP Geo Directory Archive Pages */
 .geodir-post-meta-container {
@@ -69,10 +76,6 @@ body.single-gd_loan_officer {
 		}
 	}
 
-	.lo-contact-info {}
-
-
-
 	.lo-single-socials {
 		.geodir_post_meta {
 			margin-bottom: 10px;
@@ -99,7 +102,7 @@ body.single-gd_loan_officer {
 		border-top: 1px solid #a6a6a6;
 		margin-top: 50px;
 
-		h4 {
+		.widgettitle {
 			font-size: 32px;
 			color: #174170 !important;
 			padding-bottom: 1em;

@@ -44,6 +44,7 @@
 .et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post{width:100%}
 .et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-featured-image-url{width:30%;float:left}
 .et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-title,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-meta,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-content{width:67%;float:right}
+.overlay-container .nf-form-content{padding:0}
 .geodir-post-meta-container{display:inline}
 .geodir_post_meta_icon i{min-width:16px;text-align:center;margin-right:7px}
 body.single-gd_loan_officer .lo-main-image .et_pb_image_wrap{max-height:250px;max-width:250px}

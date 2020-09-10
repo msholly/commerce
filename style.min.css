@@ -72,7 +72,7 @@ body.single-gd_loan_officer .geodir_location_listing .geodir-field-city{display:
 body.single-gd_loan_officer .geodir_location_listing .geodir-field-region{display:inline}
 body.single-gd_loan_officer .geodir_location_listing .geodir-field-zip{display:inline}
 body.single-gd_loan_officer .geodir_location_listing .geodir-post-meta-container{font-size:14px;line-height:normal}
-body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .gd_place.has-post-thumbnail{padding-top:0}
+body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .gd_place.has-post-thumbnail{padding-top:0 !important}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-post-title h2 a{font-size:18px;font-weight:500;margin:15px 0 10px 0;display:block}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir_post_meta{margin-bottom:0}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .gd-badge-meta-view-map{margin:0}

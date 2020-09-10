@@ -1,4 +1,13 @@
 /* GEO DIRECTORY */
+/* GLOBAL */
+.gd-suggestions-dropdown ul {
+	padding: 0;
+
+	li {
+		padding: 5px 10px;
+	}
+}
+
 /* WP Geo Directory Archive Pages */
 .geodir-post-meta-container {
 	display: inline;

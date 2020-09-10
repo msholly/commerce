@@ -193,6 +193,9 @@ body.single-gd_loan_officer {
 
 	.lo-contact-info {
 		.geodir_location_listing {
+            .gd_place.has-post-thumbnail {
+                padding-top: 0;
+            }
 			.geodir-post-title {
 				h2 {
 					a {

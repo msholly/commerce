@@ -86,7 +86,10 @@ body.single-gd_loan_officer {
 
 	}
 
-	.awards-and-recognition {
+	.awards-and-recognitions {
+		border-top: 1px solid #a6a6a6;
+		margin-top: 50px;
+
 		h4 {
 			font-size: 32px;
 			color: #174170 !important;
@@ -193,9 +196,10 @@ body.single-gd_loan_officer {
 
 	.lo-contact-info {
 		.geodir_location_listing {
-            .gd_place.has-post-thumbnail {
-                padding-top: 0 !important;
-            }
+			.gd_place.has-post-thumbnail {
+				padding-top: 0 !important;
+			}
+
 			.geodir-post-title {
 				h2 {
 					a {
@@ -206,9 +210,11 @@ body.single-gd_loan_officer {
 					}
 				}
 			}
-            .geodir_post_meta {
-                margin-bottom: 0;
-            }
+
+			.geodir_post_meta {
+				margin-bottom: 0;
+			}
+
 			.gd-badge-meta-view-map {
 				margin: 0;
 

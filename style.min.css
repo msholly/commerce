@@ -57,8 +57,9 @@ body.single-gd_loan_officer .gd-badge-meta.chm-cta a .gd-badge{font-size:20px;fo
 body.single-gd_loan_officer .lo-single-socials .geodir_post_meta{margin-bottom:10px;display:inline-block}
 body.single-gd_loan_officer .lo-single-socials i{font-size:18px;line-height:36px;height:36px;width:36px;background-color:#595959 !important;border-radius:50% 50% 50% 50%;color:#FFF}
 body.single-gd_loan_officer .lo-single-socials strong{display:none}
-body.single-gd_loan_officer .awards-and-recognition h4{font-size:32px;color:#174170 !important;padding-bottom:1em}
-body.single-gd_loan_officer .awards-and-recognition .geodir-image-container.gd-image-cover-n ul.geodir-images li{border:1px solid transparent}
+body.single-gd_loan_officer .awards-and-recognitions{border-top:1px solid #a6a6a6;margin-top:50px}
+body.single-gd_loan_officer .awards-and-recognitions h4{font-size:32px;color:#174170 !important;padding-bottom:1em}
+body.single-gd_loan_officer .awards-and-recognitions .geodir-image-container.gd-image-cover-n ul.geodir-images li{border:1px solid transparent}
 body.single-gd_loan_officer .comment-form a{color:#174170}
 body.single-gd_loan_officer .geodir-linked-posts .widgettitle{font-size:32px;color:#fff !important;text-align:center}
 body.single-gd_loan_officer .geodir-listings h4{margin-top:25px;font-weight:600;font-size:24px;color:#174170 !important;padding:0}

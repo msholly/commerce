@@ -401,3 +401,14 @@ END;
 
 DBDBCustomIcon::setup();
 (new DBDBCustomIcon('myicon', 'http://chmretaildev.wpengine.com/wp-content/uploads/2020/07/advisor_icon-01.png'))->init();
+
+// Default LO and LO Teams featured image
+function dfi_posttype_lo($dfi_id, $post_id)
+{
+    $post = get_post($post_id);
+    if ('gd_loan_officer' === $post->post_type || 'gd_lo_team' === $post->post_type) {
+        return 3308; // the image id
+    }
+    return $dfi_id; // the original featured image id
+}
+add_filter('dfi_thumbnail_id', 'dfi_posttype_lo', 10, 2);

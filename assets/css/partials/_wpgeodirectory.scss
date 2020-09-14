@@ -1,17 +1,18 @@
 /* GEO DIRECTORY */
 /* Search */
 .geodir-loc-bar {
-    padding: 10px 0 10px 0;
-    border-top: 1px transparent solid;
-    border-bottom: 1px transparent solid;
-    margin: 20px 0;
-    .gd-suggestions-dropdown ul {
-        padding: 0;
-    
-        li {
-            padding: 5px 10px;
-        }
-    }
+	padding: 10px 0 10px 0;
+	border-top: 1px transparent solid;
+	border-bottom: 1px transparent solid;
+	margin: 20px 0;
+
+	.gd-suggestions-dropdown ul {
+		padding: 0;
+
+		li {
+			padding: 5px 10px;
+		}
+	}
 }
 
 
@@ -260,4 +261,23 @@ body.post-type-archive-gd_place {
 	.geodir-field-zip {
 		display: inline;
 	}
+}
+
+// Branch Single Post styles
+body.single-gd_place {
+	.branch-static-quote {
+		.geodir-field-static_featured_quote_content {
+			padding: 30px 40px;
+			font-size: 20px;
+			line-height: 30px;
+			color: #174170 !important;
+		}
+
+		.geodir-field-static_featured_quote_author {
+			padding-bottom: 32px;
+			font-weight: 700;
+			color: #174170 !important;
+		}
+	}
+
 }

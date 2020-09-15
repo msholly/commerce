@@ -142,49 +142,50 @@ body.single-gd_loan_officer {
 		}
 	}
 
-    .lo-my-team { 
-        .geodir-category-list-view {
-            text-align: center;
-            .gd_lo_team {
-                .geodir-post-image {
-                    li {
-                        border-radius: 50% 50% 50% 50%;
-                        overflow: hidden;
-                        border: 2px solid #FFF;
-                        margin: 0 auto;
-                        width: 160px;
-                        height: 160px;
-                        margin-bottom: 1.5em;
-                    }
-    
-                    text-align: center;
-                }
-    
-                h2 {
-                    font-size: 23px;
-                    color: #ffffff !important;
-                    text-align: center;
-                    padding-bottom: 10px;
-                    line-height: 1em;
-                    font-weight: 500;
-                }
-    
-                .geodir-field-team_job_title {
-                    font-size: 15px;
-                    color: #ffffff !important;
-                    margin-bottom: 1em;
-                    text-align: center;
-                    margin-top: 0;
-                }
-    
-                .gd-badge-meta-see-full-profile {
-                    display: block;
-                    text-align: center;
-                }
-            }
-        }
-    }
-	
+	.lo-my-team {
+		.geodir-category-list-view {
+			text-align: center;
+
+			.gd_lo_team {
+				.geodir-post-image {
+					li {
+						border-radius: 50% 50% 50% 50%;
+						overflow: hidden;
+						border: 2px solid #FFF;
+						margin: 0 auto;
+						width: 160px;
+						height: 160px;
+						margin-bottom: 1.5em;
+					}
+
+					text-align: center;
+				}
+
+				h2 {
+					font-size: 23px;
+					color: #ffffff !important;
+					text-align: center;
+					padding-bottom: 10px;
+					line-height: 1em;
+					font-weight: 500;
+				}
+
+				.geodir-field-team_job_title {
+					font-size: 15px;
+					color: #ffffff !important;
+					margin-bottom: 1em;
+					text-align: center;
+					margin-top: 0;
+				}
+
+				.gd-badge-meta-see-full-profile {
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+	}
+
 	.geodir_location_listing {
 		.geodir-field-city {
 			display: inline;
@@ -262,9 +263,10 @@ body.post-type-archive-gd_place {
 
 // Branch Single Post styles
 body.single-gd_place {
-    .geodir-field-business_hours {
-        padding-top: 10px;
-    }
+	.geodir-field-business_hours {
+		padding-top: 10px;
+	}
+
 	.branch-static-quote {
 		.geodir-field-static_featured_quote_content {
 			padding: 30px 40px;
@@ -280,58 +282,120 @@ body.single-gd_place {
 		}
 	}
 
+	.branch-regional-manager {
+		.gd_loan_officer {
+			.geodir-post-image {
+				li {
+					border-radius: 50% 50% 50% 50%;
+					overflow: hidden;
+					border: 2px solid #FFF;
+					margin: 0 auto;
+					width: 160px;
+					height: 160px;
+					margin-bottom: 1.5em;
+				}
+
+				text-align: center;
+			}
+
+			h2 {
+				font-size: 23px;
+				text-align: center;
+				padding-bottom: 10px;
+				line-height: 1em;
+				font-weight: 500;
+			}
+
+			.geodir-field-job_title,
+			.geodir-field-nmls {
+				font-size: 15px;
+				margin-bottom: 1em;
+				text-align: center;
+				margin-top: 0;
+			}
+
+			.geodir-field-job_title {
+				margin-bottom: 0;
+			}
+
+			.gd-badge-meta-see-full-profile {
+				display: block;
+				text-align: center;
+
+				.gd-badge {
+					color: #174170 !important;
+				}
+			}
+		}
+	}
+
 	.branch-lo-our-team {
 		.widgettitle {
 			font-size: 32px;
 			color: #ffffff !important;
 			text-align: center;
-        }
-        .geodir-category-list-view {
-            text-align: center;
-            .gd_loan_officer {
-                .geodir-post-image {
-                    li {
-                        border-radius: 50% 50% 50% 50%;
-                        overflow: hidden;
-                        border: 2px solid #FFF;
-                        margin: 0 auto;
-                        width: 160px;
-                        height: 160px;
-                        margin-bottom: 1.5em;
-                    }
-    
-                    text-align: center;
-                }
-    
-                h2 {
-                    font-size: 23px;
-                    color: #ffffff !important;
-                    text-align: center;
-                    padding-bottom: 10px;
-                    line-height: 1em;
-                    font-weight: 500;
-                }
-    
-                .geodir-field-job_title,
-                .geodir-field-nmls {
-                    font-size: 15px;
-                    color: #ffffff !important;
-                    margin-bottom: 1em;
-                    text-align: center;
-                    margin-top: 0;
-                }
-    
-                .geodir-field-job_title {
-                    margin-bottom: 0;
-                }
-    
-                .gd-badge-meta-see-full-profile {
-                    display: block;
-                    text-align: center;
-                }
-            }
-        }
+		}
+
+		.geodir-category-list-view {
+			text-align: center;
+
+			.gd_loan_officer {
+				.geodir-post-image {
+					li {
+						border-radius: 50% 50% 50% 50%;
+						overflow: hidden;
+						border: 2px solid #FFF;
+						margin: 0 auto;
+						width: 160px;
+						height: 160px;
+						margin-bottom: 1.5em;
+					}
+
+					text-align: center;
+				}
+
+				h2 {
+					font-size: 23px;
+					color: #ffffff !important;
+					text-align: center;
+					padding-bottom: 10px;
+					line-height: 1em;
+					font-weight: 500;
+				}
+
+				.geodir-field-job_title,
+				.geodir-field-nmls {
+					font-size: 15px;
+					color: #ffffff !important;
+					margin-bottom: 1em;
+					text-align: center;
+					margin-top: 0;
+				}
+
+				.geodir-field-job_title {
+					margin-bottom: 0;
+				}
+
+				.gd-badge-meta-see-full-profile {
+					display: block;
+					text-align: center;
+				}
+			}
+		}
 	}
 
-	
+	.team-photos {
+		.et_pb_column {
+			min-height: 0; // Removes white line when no Team Photos are
+		}
+
+		.geodir-post-slider {
+			padding: 40px 0;
+
+			.widgettitle {
+				padding-bottom: 20px;
+			}
+		}
+	}
+
 }

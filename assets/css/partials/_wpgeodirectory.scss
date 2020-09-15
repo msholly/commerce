@@ -279,47 +279,58 @@ body.single-gd_place {
 			color: #174170 !important;
 		}
 	}
-    .geodir-category-list-view {
-		.gd_loan_officer {
-			.geodir-post-image {
-				li {
-					border-radius: 50% 50% 50% 50%;
-					overflow: hidden;
-					border: 2px solid #FFF;
-					margin: 0 auto;
-					width: 160px;
-					height: 160px;
-					margin-bottom: 1.5em;
-				}
 
-				text-align: center;
-			}
-
-			h2 {
-				font-size: 23px;
-				color: #ffffff !important;
-				text-align: center;
-				padding-bottom: 10px;
-				line-height: 1em;
-				font-weight: 500;
-			}
-
-			.geodir-field-job_title, .geodir-field-nmls {
-				font-size: 15px;
-				color: #ffffff !important;
-				margin-bottom: 1em;
-				text-align: center;
-				margin-top: 0;
+	.branch-lo-our-team {
+		.widgettitle {
+			font-size: 32px;
+			color: #ffffff !important;
+			text-align: center;
+        }
+        .geodir-category-list-view {
+            .gd_loan_officer {
+                .geodir-post-image {
+                    li {
+                        border-radius: 50% 50% 50% 50%;
+                        overflow: hidden;
+                        border: 2px solid #FFF;
+                        margin: 0 auto;
+                        width: 160px;
+                        height: 160px;
+                        margin-bottom: 1.5em;
+                    }
+    
+                    text-align: center;
+                }
+    
+                h2 {
+                    font-size: 23px;
+                    color: #ffffff !important;
+                    text-align: center;
+                    padding-bottom: 10px;
+                    line-height: 1em;
+                    font-weight: 500;
+                }
+    
+                .geodir-field-job_title,
+                .geodir-field-nmls {
+                    font-size: 15px;
+                    color: #ffffff !important;
+                    margin-bottom: 1em;
+                    text-align: center;
+                    margin-top: 0;
+                }
+    
+                .geodir-field-job_title {
+                    margin-bottom: 0;
+                }
+    
+                .gd-badge-meta-see-full-profile {
+                    display: block;
+                    text-align: center;
+                }
             }
-            
-            .geodir-field-job_title {
-				margin-bottom: 0;
-			}
-
-			.gd-badge-meta-see-full-profile {
-				display: block;
-				text-align: center;
-			}
-		}
+        }
 	}
+
+	
 }

@@ -88,12 +88,13 @@ body.post-type-archive-gd_place .geodir-field-region{display:inline}
 body.post-type-archive-gd_place .geodir-field-zip{display:inline}
 body.single-gd_place .branch-static-quote .geodir-field-static_featured_quote_content{padding:30px 40px;font-size:20px;line-height:30px;color:#174170 !important}
 body.single-gd_place .branch-static-quote .geodir-field-static_featured_quote_author{padding-bottom:32px;font-weight:700;color:#174170 !important}
-body.single-gd_place .geodir-category-list-view .gd_loan_officer .geodir-post-image{text-align:center}
-body.single-gd_place .geodir-category-list-view .gd_loan_officer .geodir-post-image li{border-radius:50% 50% 50% 50%;overflow:hidden;border:2px solid #FFF;margin:0 auto;width:160px;height:160px;margin-bottom:1.5em}
-body.single-gd_place .geodir-category-list-view .gd_loan_officer h2{font-size:23px;color:#fff !important;text-align:center;padding-bottom:10px;line-height:1em;font-weight:500}
-body.single-gd_place .geodir-category-list-view .gd_loan_officer .geodir-field-job_title,body.single-gd_place .geodir-category-list-view .gd_loan_officer .geodir-field-nmls{font-size:15px;color:#fff !important;margin-bottom:1em;text-align:center;margin-top:0}
-body.single-gd_place .geodir-category-list-view .gd_loan_officer .geodir-field-job_title{margin-bottom:0}
-body.single-gd_place .geodir-category-list-view .gd_loan_officer .gd-badge-meta-see-full-profile{display:block;text-align:center}
+body.single-gd_place .branch-lo-our-team .widgettitle{font-size:32px;color:#fff !important;text-align:center}
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image{text-align:center}
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image li{border-radius:50% 50% 50% 50%;overflow:hidden;border:2px solid #FFF;margin:0 auto;width:160px;height:160px;margin-bottom:1.5em}
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer h2{font-size:23px;color:#fff !important;text-align:center;padding-bottom:10px;line-height:1em;font-weight:500}
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-field-job_title,body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-field-nmls{font-size:15px;color:#fff !important;margin-bottom:1em;text-align:center;margin-top:0}
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-field-job_title{margin-bottom:0}
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .gd-badge-meta-see-full-profile{display:block;text-align:center}
 @media(min-width:576px){.d-sm-none{display:none !important}
 .d-sm-inline{display:inline !important}
 .d-sm-inline-block{display:inline-block !important}

@@ -70,3 +70,11 @@ function dfi_posttype_lo($dfi_id, $post_id)
     return $dfi_id; // the original featured image id
 }
 add_filter('dfi_thumbnail_id', 'dfi_posttype_lo', 10, 2);
+
+function _gd_snippet_filed_label_remove_colon( $html, $field_location, $type ) {
+	if ( ! empty( $html ) ) {
+		$html = str_replace( ': </span>', ' </span>', $html );
+	}
+	return $html;
+}
+add_filter( 'geodir_custom_field_output_text', '_gd_snippet_filed_label_remove_colon', 999, 3 ); // 'text' field type

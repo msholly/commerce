@@ -17,13 +17,12 @@
     var ourTeamLOs = $(".branch-lo-our-team li.type-gd_loan_officer"),
         regionalMg = $('.branch-regional-manager li');
     var teamArray = [];
-    var r = /\d+/;
 
     if (regionalMg.length > 0) {
-      var rmPostID = regionalMg.attr("class").match(r).toString();
+      var rmPostID = parseInt(regionalMg.data("postId"));
       $(ourTeamLOs).each(function (i) {
-        var rteamPostID = $(this).attr('class').match(r);
-        teamArray.push(rteamPostID[0]);
+        var rteamPostID = $(this).data('postId');
+        teamArray.push(rteamPostID);
       });
     }
 

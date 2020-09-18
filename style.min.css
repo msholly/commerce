@@ -3,7 +3,7 @@
 .menu-button a{border:1px #fff solid !important;padding:10px 15px !important;margin-right:22px}
 #top-menu li.menu-button a:hover{border:1px #00aade solid !important;text-decoration:none !important}
 #et-top-navigation{font-weight:500}
-.et_mobile_menu,.nav li ul{border-top:1px solid #fff}
+.et_mobile_menu,.nav li ul{border-top:1px solid #fff !important}
 #top-menu li li a{font-size:16px !important;font-weight:normal;padding:3px 6px}
 #top-menu li a:hover{opacity:1 !important}
 #top-menu li a:hover,#top-menu li li a:hover{color:#00aade !important}

@@ -67,6 +67,9 @@ function dfi_posttype_lo($dfi_id, $post_id)
     if ('gd_loan_officer' === $post->post_type || 'gd_lo_team' === $post->post_type) {
         return 3308; // the image id
     }
+    if ('gd_place' === $post->post_type) {
+        return 3815; // the image id
+    }
     return $dfi_id; // the original featured image id
 }
 add_filter('dfi_thumbnail_id', 'dfi_posttype_lo', 10, 2);

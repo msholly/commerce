@@ -24,12 +24,11 @@
         var rteamPostID = $(this).data('postId');
         teamArray.push(rteamPostID);
       });
-    }
+      var rmLOindex = $.inArray(rmPostID, teamArray);
 
-    var rmLOindex = $.inArray(rmPostID, teamArray);
-
-    if (rmLOindex > -1) {
-      $(".branch-lo-our-team li.post-" + teamArray[rmLOindex]).hide();
+      if (rmLOindex > -1) {
+        $(".branch-lo-our-team li.post-" + teamArray[rmLOindex]).hide();
+      }
     }
   }
 })(jQuery);

@@ -68,7 +68,7 @@ function dfi_posttype_lo($dfi_id, $post_id)
         return 3308; // the image id
     }
     if ('gd_place' === $post->post_type) {
-        return 3815; // the image id
+        return 3997; // the image id
     }
     return $dfi_id; // the original featured image id
 }

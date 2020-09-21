@@ -31,6 +31,7 @@
 #top-menu .mega-menu>a:first-child:after,#et-secondary-nav .menu-item-has-children>a:first-child:after{display:none}
 .hamburger:after{font-family:"ETmodules" !important;font-weight:normal;font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:.6em;text-transform:none;speak:none;position:relative;cursor:pointer;top:0;left:0;vertical-align:-8px;padding-right:3px;font-size:32px;content:"\61";color:#fff}
 .show-submenu .hamburger:after{content:"\4d"}
+#left-area ul,.comment-content ul,.et-l--body ul,.et-l--footer ul,.et-l--header ul{list-style-type:none;padding:0 0 23px 0;line-height:26px}
 .d-none{display:none !important}
 .d-inline{display:inline !important}
 .d-inline-block{display:inline-block !important}

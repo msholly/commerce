@@ -108,6 +108,15 @@ body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_off
 body.single-gd_place .team-photos .et_pb_column{min-height:0}
 body.single-gd_place .team-photos .geodir-post-slider{padding:40px 0}
 body.single-gd_place .team-photos .geodir-post-slider .widgettitle{padding-bottom:20px}
+.main_map_wrapper .gm-style .gm-style-iw{max-width:350px !important;padding:12px !important}
+.main_map_wrapper .gm-style .gm-style-iw .gm-style-iw-d{max-width:100% !important}
+.main_map_wrapper .gm-style .gm-style-iw .gd-bubble{max-width:100% !important}
+.main_map_wrapper .gm-style .geodir-bubble_image li{height:100px}
+.main_map_wrapper .gm-style .geodir-bubble_image li img{border-radius:5px !important}
+.main_map_wrapper .gm-style .geodir-bubble-meta-top .geodir-post-title h4{padding:5px 0 5px 0 !important;position:relative !important;background:none !important}
+.main_map_wrapper .gm-style .geodir-bubble-meta-top .geodir-post-title h4 a{color:#3c3c3e !important}
+.main_map_wrapper .gm-style .geodir-bubble-meta-top .geodir-post-address-container{font-size:14px;line-height:22px}
+.main_map_wrapper .gm-style .geodir-field-business_hours{margin-top:10px}
 @media(min-width:576px){.d-sm-none{display:none !important}
 .d-sm-inline{display:inline !important}
 .d-sm-inline-block{display:inline-block !important}

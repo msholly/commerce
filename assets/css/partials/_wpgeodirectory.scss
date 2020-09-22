@@ -228,8 +228,8 @@ body.single-gd_loan_officer {
 
 			.gd-badge-meta-view-map {
 				margin: 0;
-                display: block;
-                
+				display: block;
+
 				.gd-badge {
 					padding: 0
 				}
@@ -399,4 +399,52 @@ body.single-gd_place {
 		}
 	}
 
+}
+
+// Main Map Styles
+.main_map_wrapper .gm-style {
+    // Structural
+	.gm-style-iw {
+		max-width: 350px !important;
+		padding: 12px !important;
+
+		.gm-style-iw-d {
+			max-width: 100% !important;
+		}
+
+		.gd-bubble {
+			max-width: 100% !important;
+		}
+	}
+    // Information
+	.geodir-bubble_image {
+		li {
+			height: 100px;
+
+			img {
+				border-radius: 5px !important;
+			}
+		}
+	}
+
+	.geodir-bubble-meta-top {
+		.geodir-post-title h4 {
+			padding: 5px 0 5px 0 !important;
+			position: relative !important;
+			background: none !important;
+
+			a {
+				color: #3c3c3e !important;
+			}
+		}
+
+		.geodir-post-address-container {
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+
+	.geodir-field-business_hours {
+		margin-top: 10px;
+	}
 }

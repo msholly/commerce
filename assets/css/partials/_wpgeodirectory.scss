@@ -226,6 +226,12 @@ body.single-gd_loan_officer {
 				margin-bottom: 0;
 			}
 
+			.geodir-field-address {
+				font-size: 14px;
+				line-height: 22px;
+				margin-bottom: 5px;
+			}
+
 			.gd-badge-meta-view-branch {
 				margin: 0;
 				display: block;
@@ -349,10 +355,11 @@ body.single-gd_place {
 						margin: 0 auto;
 						width: 160px;
 						height: 160px;
-                        margin-bottom: 1.5em;
-                        img {
-                            object-position: 0 0;
-                        }
+						margin-bottom: 1.5em;
+
+						img {
+							object-position: 0 0;
+						}
 					}
 
 					text-align: center;
@@ -406,7 +413,8 @@ body.single-gd_place {
 
 // Main Map Styles
 .main_map_wrapper .gm-style {
-    // Structural
+
+	// Structural
 	.gm-style-iw {
 		max-width: 350px !important;
 		padding: 12px !important;
@@ -419,7 +427,8 @@ body.single-gd_place {
 			max-width: 100% !important;
 		}
 	}
-    // Information
+
+	// Information
 	.geodir-bubble_image {
 		li {
 			height: 100px;

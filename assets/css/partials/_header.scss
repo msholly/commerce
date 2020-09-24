@@ -1,56 +1,40 @@
 
-/*------------------------------------------------*/
 /*-----------------[HEADER-MENU]------------------*/
-/*------------------------------------------------*/
 /* Paymenu center button styling */
-#main-header > .container { max-width: 1896px; }
 .menu-button {
 padding: 0 !important;
 }
 .menu-button a {
-border: 1px #ffffff solid !important;
-padding: 10px 15px !important;
-margin-right: 22px;
+    border: 1px #ffffff solid !important;
+    padding: 10px 15px !important;
+    margin-right: 22px;
 }
 #top-menu li.menu-button a:hover {
-border: 1px #00aade solid !important;
-text-decoration: none !important;
+    border: 1px #00aade solid !important;
+    text-decoration: none !important;
 }
-
 #et-top-navigation {
-    font-weight: 500;
-    /*reduces font weight of primary menu items */
+    font-weight: 500; /*reduces font weight of primary menu items */
 }
-
 /* Divider line on mega-menu and mobile menu */
 .et_mobile_menu, .nav li ul {
     border-top: 1px solid #ffffff;
 }
-
 #top-menu li li a {
     font-size: 16px !important;
     font-weight: normal;
     padding: 3px 6px;
 }
-
 #top-menu li a:hover {opacity: 1!important;}
 #top-menu li a:hover,
 #top-menu li li a:hover {
     color: #00aade !important;
-    /*text-decoration: underline !important;*/
 }
 
 #top-menu a:hover,
 #top-menu a:focus,
 #top-menu li.current-page-parent a::before {
     color: #00aade;
-    /*text-decoration: underline !important;*/
-}
-
-#top-menu li.current-menu-item > a,
-#top-menu li.current-menu-ancestor > a,
-.nav li ul .current-menu-item a {
-    /*text-decoration: underline !important;*/
 }
 
 #top-menu a:hover::before,
@@ -61,15 +45,12 @@ text-decoration: none !important;
 #mobile_menu li.current-page-parent a::before {
     opacity: 1;
 }
-
 .et_header_style_left #et-top-navigation {
     padding-top: 16px!important;
 }
- 
 .et_header_style_left .et-fixed-header #et-top-navigation {
     padding-top: 6px!important;
 }
-
 /* remove divi default drop-down arrow for items with a drop down menu */
 ‪#top-menu .menu-item-has-children > a:first-child {padding-right: 22px; padding-bottom: 17px!important;}
 #top-menu .menu-item-has-children > a:first-child:after{content: ''; margin-top: -2px;}
@@ -77,37 +58,31 @@ text-decoration: none !important;
 
 /*changes the main menu mobile break-point*/
  @media (max-width: 1180px) {
- #et_mobile_nav_menu {
- display: block;
- }
- 
-#top-menu {
- display: none;
- }
+    #et_mobile_nav_menu {
+        display: block;
+    }
+    #top-menu {
+        display: none;
+    }
  } 
 #et-top-navigation #top-menu li.show-submenu ul.sub-menu { padding-left:30px; }
+
 /*** MEGA MENU ***/
 /*** hides sub-menu on hover ***/
 #et-top-navigation #top-menu li.et-hover ul.sub-menu { display: none!important; }
- 
 /*** shows submenu on click ***/
 #et-top-navigation #top-menu li.show-submenu ul.sub-menu { display: block!important; visibility: visible!important; opacity: 1!important; }
- 
 /*** Hide hamburger menu item on mobile ***/
 .et_mobile_menu .mega-menu >
  a{display:none;}
  
- 
 #top-menu .mega-menu > a, #et-secondary-nav .mega-menu > a {padding-bottom: 24px !important;}
- 
 /**** hide down arrow ****/
 #top-menu .mega-menu > a:first-child:after, #et-secondary-nav .menu-item-has-children > a:first-child:after {display: none;}
- 
 /*** show hamburger icon ***/
 .hamburger:before { 
-content: "MENU";
+    content: "MENU";
 }
-
 .hamburger:after {
     font-family: "ETmodules" !important;
     font-weight: normal;
@@ -130,7 +105,7 @@ content: "MENU";
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.hamburger:hover:after {
+.hamburger:hover::after {
      color: #00aade; /*change color of icon here*/
  }
  
@@ -139,36 +114,29 @@ content: "MENU";
     content: "\4d"; /*change x icon here*/
     color: #00aade;
 }
-
 /*** hides sub-menu on hover ***/
 #et-top-navigation #top-menu li.et-hover ul.sub-menu {
 	display: none !important;
 }
-
 /*** shows submenu on click ***/
 #et-top-navigation #top-menu li.show-submenu ul.sub-menu {
 	display: block !important;
 	visibility: visible !important;
 	opacity: 1 !important;
 }
-
 /*** Hide hamburger menu item on mobile ***/
 .et_mobile_menu .mega-menu>a {
 	display: none;
 }
-
-
 #top-menu .mega-menu>a,
 #et-secondary-nav .mega-menu>a {
 	padding-bottom: 24px !important;
 }
-
 /**** hide down arrow ****/
 #top-menu .mega-menu>a:first-child:after,
 #et-secondary-nav .menu-item-has-children>a:first-child:after {
 	display: none;
 }
-
 /*** show hamburger icon ***/
 .hamburger:after {
 	font-family: "ETmodules" !important;
@@ -193,7 +161,6 @@ content: "MENU";
 	color: #fff;
 	/*change color of icon here*/
 }
-
 /*** displays the "x" close icon ***/
 .show-submenu .hamburger:after {
 	content: "\4d";

@@ -1,4 +1,3 @@
-#main-header>.container{max-width:1896px}
 .menu-button{padding:0 !important}
 .menu-button a{border:1px #fff solid !important;padding:10px 15px !important;margin-right:22px}
 #top-menu li.menu-button a:hover{border:1px #00aade solid !important;text-decoration:none !important}
@@ -22,7 +21,7 @@
 #top-menu .mega-menu>a:first-child:after,#et-secondary-nav .menu-item-has-children>a:first-child:after{display:none}
 .hamburger:before{content:"MENU"}
 .hamburger:after{font-family:"ETmodules" !important;font-weight:normal;font-style:normal;font-variant:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:.6em;text-transform:none;speak:none;position:relative;cursor:pointer;top:0;left:0;vertical-align:-9px;padding-right:3px;font-size:32px;content:"\61";color:#fff;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
-.hamburger:hover:after{color:#00aade}
+.hamburger:hover::after{color:#00aade}
 .show-submenu .hamburger:after{content:"\4d";color:#00aade}
 #et-top-navigation #top-menu li.et-hover ul.sub-menu{display:none !important}
 #et-top-navigation #top-menu li.show-submenu ul.sub-menu{display:block !important;visibility:visible !important;opacity:1 !important}

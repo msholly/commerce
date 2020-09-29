@@ -100,13 +100,14 @@ body.single-gd_loan_officer {
 	}
 
 	.awards-and-recognitions {
-		border-top: 1px solid #a6a6a6;
-		margin-top: 50px;
+		
 
 		.widgettitle {
 			font-size: 32px;
 			color: #174170 !important;
-			padding-bottom: 1em;
+            padding: 1em 0;
+            border-top: 1px solid #a6a6a6;
+		    margin-top: 50px;
 		}
 
 		.geodir-image-container.gd-image-cover-n {

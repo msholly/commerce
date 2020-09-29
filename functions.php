@@ -81,3 +81,11 @@ function _gd_snippet_filed_label_remove_colon( $html, $field_location, $type ) {
 	return $html;
 }
 add_filter( 'geodir_custom_field_output_text', '_gd_snippet_filed_label_remove_colon', 999, 3 ); // 'text' field type
+
+function gd_disable_comment_url($fields) { 
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields','gd_disable_comment_url');
+
+add_filter( 'allow_empty_comment', '__return_true' );

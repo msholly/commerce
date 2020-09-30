@@ -119,11 +119,33 @@ body.single-gd_loan_officer {
 		}
 	}
 
-	.comment-form {
-		a {
-			color: #174170;
-		}
-	}
+    #reviewsList {
+        .gd-tab-list-title {
+            .fas, a {
+                color: #174170;
+                font-size: 32px;
+            }
+        }
+        hr {
+            display: none
+        }
+        .geodir-comments-area {
+            .comments-title {
+                font-size: 18px;
+                padding-top: 5px;
+            }
+            .commentlist>li {
+                padding: 20px 25px;
+                .avatar {
+                    display: none;
+                }
+                .geodir-review-time {
+                    color: #2ea3f2
+                }
+            }
+        }
+    }
+	
 
 	.geodir-linked-posts {
 		.widgettitle {

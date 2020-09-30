@@ -62,7 +62,12 @@ body.single-gd_loan_officer .lo-single-socials i{font-size:18px;line-height:36px
 body.single-gd_loan_officer .lo-single-socials strong{display:none}
 body.single-gd_loan_officer .awards-and-recognitions .widgettitle{font-size:32px;color:#174170 !important;padding:1em 0;border-top:1px solid #a6a6a6;margin-top:50px}
 body.single-gd_loan_officer .awards-and-recognitions .geodir-image-container.gd-image-cover-n ul.geodir-images li{border:1px solid transparent}
-body.single-gd_loan_officer .comment-form a{color:#174170}
+body.single-gd_loan_officer #reviewsList .gd-tab-list-title .fas,body.single-gd_loan_officer #reviewsList .gd-tab-list-title a{color:#174170;font-size:32px}
+body.single-gd_loan_officer #reviewsList hr{display:none}
+body.single-gd_loan_officer #reviewsList .geodir-comments-area .comments-title{font-size:18px;padding-top:5px}
+body.single-gd_loan_officer #reviewsList .geodir-comments-area .commentlist>li{padding:20px 25px}
+body.single-gd_loan_officer #reviewsList .geodir-comments-area .commentlist>li .avatar{display:none}
+body.single-gd_loan_officer #reviewsList .geodir-comments-area .commentlist>li .geodir-review-time{color:#2ea3f2}
 body.single-gd_loan_officer .geodir-linked-posts .widgettitle{font-size:32px;color:#fff !important;text-align:center}
 body.single-gd_loan_officer .geodir-listings h4{margin-top:25px;font-weight:600;font-size:24px;color:#174170 !important;padding:0}
 body.single-gd_loan_officer .lo-my-team .geodir-category-list-view{text-align:center}

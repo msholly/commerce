@@ -65,7 +65,7 @@ function dfi_posttype_lo($dfi_id, $post_id)
 {
     $post = get_post($post_id);
     if ('gd_loan_officer' === $post->post_type || 'gd_lo_team' === $post->post_type) {
-        return 3308; // the image id
+        return 4649; // the image id
     }
     if ('gd_place' === $post->post_type) {
         return 3997; // the image id

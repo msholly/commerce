@@ -122,6 +122,7 @@ body.single-gd_place .team-photos .geodir-post-slider .widgettitle{padding-botto
 .main_map_wrapper .gm-style .geodir-bubble-meta-top .geodir-post-title h4 a{color:#3c3c3e !important}
 .main_map_wrapper .gm-style .geodir-bubble-meta-top .geodir-post-address-container{font-size:14px;line-height:22px}
 .main_map_wrapper .gm-style .geodir-field-business_hours{margin-top:10px}
+.mapsvg-region-label{color:#00aade}
 .mapsvg-popover::before{border-top-color:#818181 !important}
 .mapsvg-popover .mapsvg-popover-close{top:6px;right:-13px}
 .mapsvg-popover .mapsvg-controller-view-content{padding-top:38px !important;padding-left:0;padding-right:0;padding-bottom:0;background-color:#FFF}

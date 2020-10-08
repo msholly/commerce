@@ -40,36 +40,39 @@
 
 		}
 
-		Handlebars.registerHelper('each_with_sort', function (array, key, opts) {
-			var data, e, i, j, len, s;
-			if (opts.data) {
-				data = Handlebars.createFrame(opts.data);
-			}
-			array = array.sort(function (a, b) {
-				a = a[key];
-				b = b[key];
-				if (a > b) {
-					return 1;
-				}
-				if (a === b) {
-					return 0;
-				}
-				if (a < b) {
-					return -1;
-				}
-			});
-			s = '';
-			for (i = j = 0, len = array.length; j < len; i = ++j) {
-				e = array[i];
-				if (data) {
-					data.index = i;
-				}
-				s += opts.fn(e, {
-					data: data
-				});
-			}
-			return s;
-		});
+        if (Handlebars.registerHelper) {
+            Handlebars.registerHelper('each_with_sort', function (array, key, opts) {
+                var data, e, i, j, len, s;
+                if (opts.data) {
+                    data = Handlebars.createFrame(opts.data);
+                }
+                array = array.sort(function (a, b) {
+                    a = a[key];
+                    b = b[key];
+                    if (a > b) {
+                        return 1;
+                    }
+                    if (a === b) {
+                        return 0;
+                    }
+                    if (a < b) {
+                        return -1;
+                    }
+                });
+                s = '';
+                for (i = j = 0, len = array.length; j < len; i = ++j) {
+                    e = array[i];
+                    if (data) {
+                        data.index = i;
+                    }
+                    s += opts.fn(e, {
+                        data: data
+                    });
+                }
+                return s;
+            });
+        }
+		
 	});
 
 

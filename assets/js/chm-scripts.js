@@ -33,7 +33,7 @@
       }
     }
 
-    if (Handlebars.registerHelper) {
+    if (Handlebars) {
       Handlebars.registerHelper('each_with_sort', function (array, key, opts) {
         var data, e, i, j, len, s;
 

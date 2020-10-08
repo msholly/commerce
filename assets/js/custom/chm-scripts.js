@@ -40,7 +40,7 @@
 
 		}
 
-        if (Handlebars) {
+        if (typeof Handlebars !== 'undefined' ) {
             Handlebars.registerHelper('each_with_sort', function (array, key, opts) {
                 var data, e, i, j, len, s;
                 if (opts.data) {

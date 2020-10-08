@@ -57,6 +57,8 @@ body.single-gd_loan_officer .gd-badge-meta.chm-cta{display:block}
 body.single-gd_loan_officer .gd-badge-meta.chm-cta a{background-color:#174170;border-width:1px !important;border-radius:33px;width:80%;-webkit-transition:all 300ms ease 0ms;transition:all 300ms ease 0ms;padding:.3em 1em !important;min-height:46px;display:block;text-align:center;margin:0 auto}
 body.single-gd_loan_officer .gd-badge-meta.chm-cta a:hover{background-color:#00aade !important}
 body.single-gd_loan_officer .gd-badge-meta.chm-cta a .gd-badge{font-size:20px;font-weight:500;text-align:center}
+body.single-gd_loan_officer .submit{cursor:pointer;color:#FFF;background-color:#174170;border-width:0 !important;border-radius:33px;-webkit-transition:all 300ms ease 0ms;transition:all 300ms ease 0ms;padding:.3em 1em !important;min-height:46px;display:block;text-align:center;font-size:20px}
+body.single-gd_loan_officer .submit:hover{background-color:#00aade !important}
 body.single-gd_loan_officer .lo-single-socials .geodir_post_meta{margin-bottom:10px;display:inline-block}
 body.single-gd_loan_officer .lo-single-socials i{font-size:18px;line-height:36px;height:36px;width:36px;background-color:#595959 !important;border-radius:50% 50% 50% 50%;color:#FFF}
 body.single-gd_loan_officer .lo-single-socials strong{display:none}
@@ -64,6 +66,7 @@ body.single-gd_loan_officer .awards-and-recognitions .widgettitle{font-size:32px
 body.single-gd_loan_officer .awards-and-recognitions .geodir-image-container.gd-image-cover-n ul.geodir-images li{border:1px solid transparent}
 body.single-gd_loan_officer #reviewsList .gd-tab-list-title .fas,body.single-gd_loan_officer #reviewsList .gd-tab-list-title a{color:#174170;font-size:32px}
 body.single-gd_loan_officer #reviewsList hr{display:none}
+body.single-gd_loan_officer #reviewsList .comment-respond .logged-in-as a{color:#174170}
 body.single-gd_loan_officer #reviewsList .geodir-comments-area .comments-title{font-size:18px;padding-top:5px}
 body.single-gd_loan_officer #reviewsList .geodir-comments-area .commentlist>li{padding:20px 25px}
 body.single-gd_loan_officer #reviewsList .geodir-comments-area .commentlist>li .avatar{display:none}

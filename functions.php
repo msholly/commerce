@@ -7,6 +7,9 @@ function theme_enqueue_styles()
     wp_enqueue_script('chm-child-scripts', get_stylesheet_directory_uri() . '/assets/js/chm-scripts.js', array('jquery'), filemtime(get_stylesheet_directory() . '/assets/js/chm-scripts.js'), true);
 }
 
+// Shortcode for Select2 Search
+require_once 'includes/search-shortcode.php';
+
 
 //======================================================================
 // CUSTOM DASHBOARD

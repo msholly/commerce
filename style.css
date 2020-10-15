@@ -248,7 +248,7 @@ Version: 0.1
 
 /* GEO DIRECTORY */
 /* Search */
-.geodir-loc-bar { padding: 10px 0 10px 0; border-top: 1px transparent solid; border-bottom: 1px transparent solid; margin: 20px 0; }
+.geodir-loc-bar { padding: 10px 0 10px 0; border-top: 1px transparent solid; border-bottom: 1px transparent solid; margin: 10px 0; }
 
 .geodir-loc-bar .gd-suggestions-dropdown ul { padding: 0; }
 
@@ -374,7 +374,7 @@ body.single-gd_place .branch-lo-our-team .geodir-category-list-view { text-align
 
 body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image { text-align: center; }
 
-body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image li { border-radius: 50% 50% 50% 50%; overflow: hidden; border: 2px solid #174170; margin: 0 auto; width: 160px; height: 160px; margin-bottom: 1.5em; }
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image li { border-radius: 50% 50% 50% 50%; overflow: hidden; border: 2px solid #ffffff; margin: 0 auto; width: 160px; height: 160px; margin-bottom: 1.5em; }
 
 body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image li img { -o-object-position: 0 0; object-position: 0 0; }
 

@@ -107,12 +107,13 @@ body.single-gd_place .branch-regional-manager .gd_loan_officer .gd-badge-meta-se
 body.single-gd_place .branch-lo-our-team .widgettitle{font-size:32px;color:#174170 !important;text-align:center}
 body.single-gd_place .branch-lo-our-team .geodir-category-list-view{text-align:center}
 body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image{text-align:center}
-body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image li{border-radius:50% 50% 50% 50%;overflow:hidden;border:2px solid #FFF;margin:0 auto;width:160px;height:160px;margin-bottom:1.5em}
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image li{border-radius:50% 50% 50% 50%;overflow:hidden;border:2px solid #174170;margin:0 auto;width:160px;height:160px;margin-bottom:1.5em}
 body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-post-image li img{-o-object-position:0;object-position:0}
 body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer h2{font-size:23px;color:#174170 !important;text-align:center;padding-bottom:10px;line-height:1em;font-weight:500}
-body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-field-job_title,body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-field-nmls{font-size:15px;color:#174170 !important;margin-bottom:1em;text-align:center;margin-top:0}
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-field-job_title,body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-field-nmls{font-size:15px;line-height:1.3em;color:#174170 !important;margin-bottom:1em;text-align:center;margin-top:0}
 body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .geodir-field-job_title{margin-bottom:0}
 body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .gd-badge-meta-see-full-profile{display:block;text-align:center}
+body.single-gd_place .branch-lo-our-team .geodir-category-list-view .gd_loan_officer .gd-badge{color:#174170 !important}
 body.single-gd_place .team-photos .et_pb_column{min-height:0}
 body.single-gd_place .team-photos .geodir-post-slider{padding:40px 0}
 body.single-gd_place .team-photos .geodir-post-slider .widgettitle{padding-bottom:20px}

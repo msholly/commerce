@@ -406,7 +406,7 @@ body.single-gd_place {
 					li {
 						border-radius: 50% 50% 50% 50%;
 						overflow: hidden;
-						border: 2px solid #FFF;
+						border: 2px solid #174170;
 						margin: 0 auto;
 						width: 160px;
 						height: 160px;
@@ -432,6 +432,7 @@ body.single-gd_place {
 				.geodir-field-job_title,
 				.geodir-field-nmls {
 					font-size: 15px;
+					line-height: 1.3em;
 					color: #174170 !important;
 					margin-bottom: 1em;
 					text-align: center;
@@ -445,6 +446,9 @@ body.single-gd_place {
 				.gd-badge-meta-see-full-profile {
 					display: block;
 					text-align: center;
+				}
+				.gd-badge {
+					color: #174170 !important;
 				}
 			}
 		}

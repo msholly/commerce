@@ -62,6 +62,7 @@
 .chm-search form.geodir-listing-search.gd-search-bar-style.gd_loan_officer .gd-suggestions-dropdown li .gdasac-icon{width:75px;border-radius:50%;margin-right:5px}
 .chm-search form.geodir-listing-search.gd-search-bar-style.gd_loan_officer .gd-suggestions-dropdown li.gdas-section-title{display:none}
 .chm-search .searchBy-lo-name,.chm-search .searchBy-lo-near{padding-bottom:0}
+.osx.et_mobile_device .overlay .entry-content .et_pb_section .et_pb_row.chm-search{top:0 !important}
 .geodir-post-meta-container{display:inline}
 .geodir_post_meta_icon i{min-width:16px;text-align:center;margin-right:7px}
 body.single-gd_loan_officer .lo-main-image .et_pb_image_wrap{max-height:250px;max-width:250px}
@@ -190,6 +191,7 @@ body.single-gd_place .team-photos .geodir-post-slider .widgettitle{padding-botto
 }@media only screen and (max-width:980px){.et_pb_row{width:90%}
 }@media screen and (max-width:812px){.mapsvg-popover .mapsvg-controller-view-content h4{top:0}
 }@media all and (max-width:479px){.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-featured-image-url,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-title,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-meta,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-content{width:100%;float:none}
+.chm-search h2{font-size:20px}
 }@media print{.d-print-none{display:none !important}
 .d-print-inline{display:inline !important}
 .d-print-inline-block{display:inline-block !important}

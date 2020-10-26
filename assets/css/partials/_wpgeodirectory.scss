@@ -107,12 +107,19 @@
 
 	}
 
+    @media all and (max-width: 479px) {
+        h2 {
+            font-size: 20px;
+        }
+    }
 	.searchBy-lo-name,
 	.searchBy-lo-near {
 		padding-bottom: 0;
 	}
 }
-
+.osx.et_mobile_device .overlay .entry-content .et_pb_section .et_pb_row.chm-search {
+    top: 0 !important;
+}
 
 
 

@@ -10,8 +10,13 @@ form.geodir-listing-search.gd-search-bar-style {
 		margin: 0px 0 20px 0;
 
 		.clearfix.geodir-loc-bar-in {
+			border: none;
+			background-color: transparent;
+			padding: 0;
+
 			.geodir-search {
 				.gd-search-input-wrapper {
+                    margin-left: 0 !important;
 					.geodir-search-input-label {
 						top: 15px;
 						left: 13px;
@@ -26,22 +31,24 @@ form.geodir-listing-search.gd-search-bar-style {
 						height: 56px;
 						border-radius: 0;
 						border-color: #a6a6a6;
-                    }
-                    
-                    .snear+.gdlm-location-suggestions {
-                        top: 55px;
-                        border-top-color: #a6a6a6;
-                        font-size: 16px;
-                        .fas {
-                            min-width: 16px;
-                            text-align: center;
-                            margin-right: 6px;
-                        }
-                    }
-                    .gd_search_text+.gdas-search-suggestions {
-                        top: 55px;
-                        border-top-color: #a6a6a6;
-                    }
+					}
+
+					.snear+.gdlm-location-suggestions {
+						top: 55px;
+						border-top-color: #a6a6a6;
+						font-size: 16px;
+
+						.fas {
+							min-width: 16px;
+							text-align: center;
+							margin-right: 6px;
+						}
+					}
+
+					.gd_search_text+.gdas-search-suggestions {
+						top: 55px;
+						border-top-color: #a6a6a6;
+					}
 				}
 
 				.geodir_submit_search {
@@ -76,26 +83,29 @@ form.geodir-listing-search.gd-search-bar-style {
 
 	// LO Search 
 	&.gd_loan_officer {
-        .gd-suggestions-dropdown {
-            li {
-                font-size: 16px;
-                padding-left: 20px !important;
-                .gdasac-icon {
-                    width: 75px;
-                    border-radius: 50%;
-                    margin-right: 5px;
-                }
-                &.gdas-section-title {
-                    display: none;
-                }
-            }
-        }
-    }
+		.gd-suggestions-dropdown {
+			li {
+				font-size: 16px;
+				padding-left: 20px !important;
+
+				.gdasac-icon {
+					width: 75px;
+					border-radius: 50%;
+					margin-right: 5px;
+				}
+
+				&.gdas-section-title {
+					display: none;
+				}
+			}
+		}
+	}
 
 }
 
-.searchBy-lo-name, .searchBy-lo-near {
-    padding-bottom: 0;
+.searchBy-lo-name,
+.searchBy-lo-near {
+	padding-bottom: 0;
 }
 
 
@@ -531,6 +541,7 @@ body.single-gd_place {
 					display: block;
 					text-align: center;
 				}
+
 				.gd-badge {
 					color: #174170 !important;
 				}

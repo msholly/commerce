@@ -46,6 +46,8 @@
 .et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-title,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-meta,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-content{width:67%;float:right}
 .overlay-container .nf-form-content{padding:0}
 form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar{padding:0 0 10px 0;border-top:1px transparent solid;border-bottom:1px transparent solid;margin:0 0 20px 0}
+form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in{border:0;background-color:transparent;padding:0}
+form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper{margin-left:0 !important}
 form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .geodir-search-input-label{top:15px;left:13px;font-size:16px}
 form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper input[type=text],form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .geodir-search-input-label+input.search_text{padding:16px 16px 16px 35px !important;padding-left:35px !important;font-size:16px;height:56px;border-radius:0;border-color:#a6a6a6}
 form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .snear+.gdlm-location-suggestions{top:55px;border-top-color:#a6a6a6;font-size:16px}

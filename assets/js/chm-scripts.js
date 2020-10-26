@@ -2,7 +2,37 @@
 
 (function ($) {
   $(document).ready(function () {
-    // IF Loan Officer Detail page
+    $("form.geodir-listing-search").each(function (i) {
+      var stype = $(this).find("input[name='stype']").val(); // add class to its form for easier styling and targeting
+
+      $(this).closest("form").addClass(stype); // custom placeholder 
+
+      $(".gd-search-field-search input").attr("placeholder", "Search By Name");
+      $(".gd-search-field-near input").attr("placeholder", "e.g. Irvine, CA or 92606"); // default to LO search by geo
+
+      if (stype == 'gd_loan_officer') {
+        $('form.gd_loan_officer .gd-search-field-search, .searchBy-lo-name').hide();
+      }
+    });
+    $(".chm-search").on('click', '.chm-toggle-lo-search', function (event) {
+      event.preventDefault();
+      var nearToggle = $('.searchBy-lo-near, form.gd_loan_officer .gd-search-field-near'),
+          nameToggle = $('.searchBy-lo-name, form.gd_loan_officer .gd-search-field-search');
+
+      if (this.id == 'search-toggle-lo-name') {
+        nearToggle.hide();
+        nearToggle.children("input").val("");
+        nameToggle.show();
+      } else {
+        nearToggle.show();
+        nameToggle.hide();
+        nameToggle.children("input").val("");
+      }
+    });
+    $("input.snear").focusout(function () {
+      $(this).next(".gdlm-location-suggestions").hide();
+    }); // IF Loan Officer Detail page
+
     if ($("body").hasClass("single-gd_loan_officer")) {
       // Make WPGeoDirectory social icons clickable
       $(".lo-single-socials .geodir_post_meta").each(function (i) {

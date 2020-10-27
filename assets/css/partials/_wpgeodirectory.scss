@@ -107,18 +107,20 @@
 
 	}
 
-    @media all and (max-width: 479px) {
-        h2 {
-            font-size: 20px;
-        }
-    }
+	@media all and (max-width: 479px) {
+		h2 {
+			font-size: 20px;
+		}
+	}
+
 	.searchBy-lo-name,
 	.searchBy-lo-near {
 		padding-bottom: 0;
 	}
 }
+
 .osx.et_mobile_device .overlay .entry-content .et_pb_section .et_pb_row.chm-search {
-    top: 0 !important;
+	top: 0 !important;
 }
 
 
@@ -625,5 +627,35 @@ body.single-gd_place {
 
 	.geodir-field-business_hours {
 		margin-top: 10px;
+	}
+}
+
+// Page /about/branches/ styling 
+body.page-id-3621 {
+	.geodir-listings {
+		.widgettitle {
+			color: #174170;
+			font-size: 26px
+		}
+
+		.geodir-entry-title {
+			color: #174170
+		}
+
+		.gd-list-item-left {
+			display: none !important;
+		}
+
+		.geodir_post_meta {
+			line-height: normal;
+
+			a {
+				color: #174170;
+			}
+		}
+
+		.gd-badge-meta-view-branch {
+			display: none;
+		}
 	}
 }

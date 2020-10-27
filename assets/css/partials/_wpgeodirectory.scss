@@ -28,14 +28,18 @@
 						}
 
 						input[type=text],
-						.geodir-search-input-label+input.search_text {
+						.geodir-search-input-label+input.search_text, .search_by_post {
 							padding: 16px 16px 16px 35px !important;
 							padding-left: 35px !important;
 							font-size: 16px;
 							height: 56px;
 							border-radius: 0;
 							border-color: #a6a6a6;
-						}
+                        }
+                        
+                        .search_by_post {
+                            padding-left: 16px !important;
+                        }
 
 						.snear+.gdlm-location-suggestions {
 							top: 55px;

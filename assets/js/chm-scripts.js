@@ -37,7 +37,7 @@
     // Anchor link scrolls to state listings
 
     if ($("body").hasClass("page-id-3621")) {
-      $(".geodir-listings h4.widgettitle").each(function (i) {
+      $(".geodir-listings .widgettitle").each(function (i) {
         var heading = $(this);
         var headingtext = heading.text().toLowerCase().trim().replace(/[\.,-\/#!?$%\^&\*;:{}=\-_`~()]/g, "").replace(' ', '-');
         heading.attr("id", headingtext);

@@ -20,6 +20,7 @@
 			}
 		});
 
+		// Toggle LO search visibility
 		$(".chm-search").on('click', '.chm-toggle-lo-search', function (event) {
 			event.preventDefault();
 			var nearToggle = $('.searchBy-lo-near, form.gd_loan_officer .gd-search-field-near'),
@@ -36,9 +37,52 @@
 			}
 		});
 
+		// Always removes GD Suggestions on focus out
 		$("input.snear").focusout(function () {
 			$(this).next(".gdlm-location-suggestions").hide();
 		});
+
+		// page-id-3621 is /about/branches/ 
+		// Anchor link scrolls to state listings
+		if ($("body").hasClass("page-id-3621")) {
+			$(".geodir-listings h4.widgettitle").each(function (i) {
+				var heading = $(this);
+				var headingtext = heading.text().toLowerCase().trim().replace(/[\.,-\/#!?$%\^&\*;:{}=\-_`~()]/g, "").replace(' ', '-');
+				heading.attr("id", headingtext);
+			});
+
+			$("#select2-ajax-branch").on("select2:select", function (e) {
+				console.log(e.params.data.id)
+				// window.location.hash = e.params.data.id;
+				scrollToAnchor("#" + e.params.data.id);
+			});
+
+			$.ajax({
+				type: "GET",
+				dataType: "json",
+				async: true,
+				url: "https://chmretaildev.wpengine.com/wp-json/geodir/v2/locations/regions",
+				data: ({}),
+				success: function (data) {
+					var formatted = $.map(data, function (obj) {
+						obj.id = obj.id || obj.slug; // replace pk with your identifier
+
+						return obj;
+					});
+
+					var sorted = formatted.sort(function (a, b) {
+						if (a.title < b.title) {
+							return -1;
+						}
+						if (a.title > b.title) {
+							return 1;
+						}
+						return 0;
+					});
+					makeSelect2(sorted);
+				}
+			});
+		}
 
 		// IF Loan Officer Detail page
 		if ($("body").hasClass("single-gd_loan_officer")) {
@@ -112,7 +156,61 @@
 	});
 
 
+	function formatState(state) {
+		if (!state.id) {
+			return state.text;
+		}
+		var state1 = state.title;
+		return state1;
+	};
 
+	function selection(state) {
+		if (state.id === '') { // adjust for custom placeholder values
+			return 'Search by State';
+		}
+		return state.title;
+	}
+
+	function makeSelect2(data) {
+		$('#select2-ajax-branch').select2({
+			data: data,
+			templateSelection: selection,
+			templateResult: formatState,
+			escapeMarkup: function (state) {
+				return state;
+			},
+			placeholder: 'Search by State'
+		});
+	}
+
+	function scrollToAnchor(hash) {
+		var target = $(hash),
+			headerHeight = 160; // Get fixed header height
+
+		target = target.length ? target : $('[name=' + hash.slice(1) + ']');
+
+		if (target.length) {
+			$('html,body').animate({
+				scrollTop: target.offset().top - headerHeight
+			}, 100);
+			return false;
+		}
+	}
+
+	if (window.location.hash) {
+		scrollToAnchor(window.location.hash);
+	}
+
+
+	// $("a[href*=\\#]:not([href=\\#])").click(function()
+	// {
+	//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	//         || location.hostname == this.hostname)
+	//     {
+
+	//         scrollToAnchor(this.hash);
+	//     }
+	// });
 
 
 })(jQuery);

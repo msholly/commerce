@@ -286,7 +286,7 @@ Version: 0.1
 
 .chm-search .searchBy-lo-name, .chm-search .searchBy-lo-near { padding-bottom: 0; }
 
-body.geodir-page-search .geodir-listing-posts .geodir-image-container ul.geodir-images li { border-radius: 50%; padding-bottom: 35% !important; }
+body.geodir-page-search .geodir-listing-posts .geodir-image-container ul.geodir-images li { border-radius: 50%; padding-bottom: 25% !important; }
 
 body.geodir-page-search .geodir-listing-posts .gd-list-item-right { text-align: center; }
 

@@ -28,18 +28,19 @@
 						}
 
 						input[type=text],
-						.geodir-search-input-label+input.search_text, .search_by_post {
+						.geodir-search-input-label+input.search_text,
+						.search_by_post {
 							padding: 16px 16px 16px 35px !important;
 							padding-left: 35px !important;
 							font-size: 16px;
 							height: 56px;
 							border-radius: 0;
 							border-color: #a6a6a6;
-                        }
-                        
-                        .search_by_post {
-                            padding-left: 16px !important;
-                        }
+						}
+
+						.search_by_post {
+							padding-left: 16px !important;
+						}
 
 						.snear+.gdlm-location-suggestions {
 							top: 55px;
@@ -120,6 +121,34 @@
 	.searchBy-lo-name,
 	.searchBy-lo-near {
 		padding-bottom: 0;
+	}
+}
+
+// Search Results page 
+body.geodir-page-search {
+	.geodir-listing-posts {
+		.geodir-image-container ul.geodir-images li {
+			border-radius: 50%;
+			padding-bottom: 35% !important;
+		}
+
+		.gd-list-item-right {
+			text-align: center;
+
+			.geodir-entry-title {
+				margin-top: 10px;
+
+				a {
+					font-size: 18px;
+					color: #174170 !important;
+				}
+			}
+
+			.geodir_post_meta {
+				line-height: normal;
+			}
+		}
+
 	}
 }
 

@@ -55,7 +55,9 @@
         data: {},
         success: function success(data) {
           var formatted = $.map(data, function (obj) {
-            obj.id = obj.id || obj.slug; // replace pk with your identifier
+            obj.id = obj.id || obj.slug; // unique ID needed
+
+            obj.text = obj.title; // title needed for proper search
 
             return obj;
           });
@@ -183,7 +185,7 @@
 
   function scrollToAnchor(hash) {
     var target = $(hash),
-        headerHeight = 160; // Get fixed header height
+        headerHeight = $('#main-header').outerHeight() + 20; // Get fixed header height
 
     target = target.length ? target : $('[name=' + hash.slice(1) + ']');
 

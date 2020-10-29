@@ -124,6 +124,20 @@
 	}
 }
 
+.chm-branch-states {
+	.select2-selection--single {
+		font-size: 16px;
+		height: 56px;
+		border-radius: 0;
+		border-color: #a6a6a6;
+		padding: 10px 16px 10px 10px !important;
+
+		.select2-selection__arrow {
+			height: 56px;
+		}
+	}
+}
+
 // Search Results page 
 body.geodir-page-search {
 	.geodir-listing-posts {

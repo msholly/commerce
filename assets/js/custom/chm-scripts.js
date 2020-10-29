@@ -65,8 +65,8 @@
 				data: ({}),
 				success: function (data) {
 					var formatted = $.map(data, function (obj) {
-						obj.id = obj.id || obj.slug; // replace pk with your identifier
-
+						obj.id = obj.id || obj.slug; // unique ID needed
+                        obj.text = obj.title // title needed for proper search
 						return obj;
 					});
 
@@ -169,13 +169,13 @@
 			return 'Search by State';
 		}
 		return state.title;
-	}
+    }
 
 	function makeSelect2(data) {
 		$('#select2-ajax-branch').select2({
 			data: data,
 			templateSelection: selection,
-			templateResult: formatState,
+            templateResult: formatState,
 			escapeMarkup: function (state) {
 				return state;
 			},
@@ -185,8 +185,8 @@
 
 	function scrollToAnchor(hash) {
 		var target = $(hash),
-			headerHeight = 160; // Get fixed header height
-
+			headerHeight = $('#main-header').outerHeight() + 20; // Get fixed header height
+            
 		target = target.length ? target : $('[name=' + hash.slice(1) + ']');
 
 		if (target.length) {

@@ -139,8 +139,15 @@
 }
 
 // Search Results page 
-body.geodir-page-search {
-	.geodir-listing-posts {
+body.geodir-page-search, body.geodir-page-location {
+	#main-content {
+		background-image: url(https://chmretaildev.wpengine.com/wp-content/uploads/bg-branches.jpg);
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: contain;
+	}
+
+	.geodir-category-list-view {
 		.geodir-image-container ul.geodir-images li {
 			border-radius: 50%;
 			padding-bottom: 25% !important;
@@ -160,9 +167,30 @@ body.geodir-page-search {
 
 			.geodir_post_meta {
 				line-height: normal;
+
+				a {
+					color: #174170 !important;
+				}
 			}
 		}
 
+	}
+}
+
+.geodir-pagination ul.page-numbers li {
+	padding: 0;
+	overflow: hidden;
+	border-color: #a6a6a6;
+
+	.page-numbers {
+		color: #174170 !important;
+		padding: 17px 20px;
+		display: block;
+
+		&.current {
+			color: #FFF;
+			background-color: #174170;
+		}
 	}
 }
 

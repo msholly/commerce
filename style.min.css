@@ -65,11 +65,16 @@
 .chm-search .searchBy-lo-name,.chm-search .searchBy-lo-near{padding-bottom:0}
 .chm-branch-states .select2-selection--single{font-size:16px;height:56px !important;border-radius:0;border-color:#a6a6a6;padding:10px 16px 10px 10px !important}
 .chm-branch-states .select2-selection--single .select2-selection__arrow{height:56px}
-body.geodir-page-search .geodir-listing-posts .geodir-image-container ul.geodir-images li{border-radius:50%;padding-bottom:25% !important}
-body.geodir-page-search .geodir-listing-posts .gd-list-item-right{text-align:center}
-body.geodir-page-search .geodir-listing-posts .gd-list-item-right .geodir-entry-title{margin-top:10px}
-body.geodir-page-search .geodir-listing-posts .gd-list-item-right .geodir-entry-title a{font-size:18px;color:#174170 !important}
-body.geodir-page-search .geodir-listing-posts .gd-list-item-right .geodir_post_meta{line-height:normal}
+body.geodir-page-search #main-content,body.geodir-page-location #main-content{background-image:url(https://chmretaildev.wpengine.com/wp-content/uploads/bg-branches.jpg);background-repeat:no-repeat;background-position:top center;background-size:contain}
+body.geodir-page-search .geodir-category-list-view .geodir-image-container ul.geodir-images li,body.geodir-page-location .geodir-category-list-view .geodir-image-container ul.geodir-images li{border-radius:50%;padding-bottom:25% !important}
+body.geodir-page-search .geodir-category-list-view .gd-list-item-right,body.geodir-page-location .geodir-category-list-view .gd-list-item-right{text-align:center}
+body.geodir-page-search .geodir-category-list-view .gd-list-item-right .geodir-entry-title,body.geodir-page-location .geodir-category-list-view .gd-list-item-right .geodir-entry-title{margin-top:10px}
+body.geodir-page-search .geodir-category-list-view .gd-list-item-right .geodir-entry-title a,body.geodir-page-location .geodir-category-list-view .gd-list-item-right .geodir-entry-title a{font-size:18px;color:#174170 !important}
+body.geodir-page-search .geodir-category-list-view .gd-list-item-right .geodir_post_meta,body.geodir-page-location .geodir-category-list-view .gd-list-item-right .geodir_post_meta{line-height:normal}
+body.geodir-page-search .geodir-category-list-view .gd-list-item-right .geodir_post_meta a,body.geodir-page-location .geodir-category-list-view .gd-list-item-right .geodir_post_meta a{color:#174170 !important}
+.geodir-pagination ul.page-numbers li{padding:0;overflow:hidden;border-color:#a6a6a6}
+.geodir-pagination ul.page-numbers li .page-numbers{color:#174170 !important;padding:17px 20px;display:block}
+.geodir-pagination ul.page-numbers li .page-numbers.current{color:#FFF;background-color:#174170}
 .osx.et_mobile_device .overlay .entry-content .et_pb_section .et_pb_row.chm-search{top:0 !important}
 .geodir-post-meta-container{display:inline}
 .geodir_post_meta_icon i{min-width:16px;text-align:center;margin-right:7px}

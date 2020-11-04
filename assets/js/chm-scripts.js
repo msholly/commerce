@@ -21,19 +21,21 @@
           nameToggle = $('.searchBy-lo-name, form.gd_loan_officer .gd-search-field-search');
 
       if (this.id == 'search-toggle-lo-name') {
-        nearToggle.hide();
-        nearToggle.children("input").val("");
+        nearToggle.hide(); // Mimcis Geodir's native clear input fields
+
+        $(".gd-icon-hover-swap").click();
         nameToggle.show();
       } else {
         nearToggle.show();
-        nameToggle.hide();
-        nameToggle.children("input").val("");
+        nameToggle.hide(); // Mimcis Geodir's native clear input fields
+
+        $(".gd-icon-hover-swap").click();
       }
     }); // Always removes GD Suggestions on focus out
-
-    $("input.snear").focusout(function () {
-      $(this).next(".gdlm-location-suggestions").hide();
-    }); // page-id-3621 is /about/branches/ 
+    // $("input.snear").focusout(function () {
+    // 	$(this).next(".gdlm-location-suggestions").hide();
+    // });
+    // page-id-3621 is /about/branches/ 
     // Anchor link scrolls to state listings
 
     if ($("body").hasClass("page-id-3621")) {

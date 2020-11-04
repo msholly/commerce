@@ -28,19 +28,22 @@
 
 			if (this.id == 'search-toggle-lo-name') {
 				nearToggle.hide();
-				nearToggle.children("input").val("")
+				// Mimcis Geodir's native clear input fields
+				$(".gd-icon-hover-swap").click();
 				nameToggle.show();
 			} else {
 				nearToggle.show();
 				nameToggle.hide();
-				nameToggle.children("input").val("")
+				// Mimcis Geodir's native clear input fields
+				$(".gd-icon-hover-swap").click();
+
 			}
 		});
 
 		// Always removes GD Suggestions on focus out
-		$("input.snear").focusout(function () {
-			$(this).next(".gdlm-location-suggestions").hide();
-		});
+		// $("input.snear").focusout(function () {
+		// 	$(this).next(".gdlm-location-suggestions").hide();
+		// });
 
 		// page-id-3621 is /about/branches/ 
 		// Anchor link scrolls to state listings
@@ -66,7 +69,7 @@
 				success: function (data) {
 					var formatted = $.map(data, function (obj) {
 						obj.id = obj.id || obj.slug; // unique ID needed
-                        obj.text = obj.title // title needed for proper search
+						obj.text = obj.title // title needed for proper search
 						return obj;
 					});
 
@@ -169,13 +172,13 @@
 			return 'Search by State';
 		}
 		return state.title;
-    }
+	}
 
 	function makeSelect2(data) {
 		$('#select2-ajax-branch').select2({
 			data: data,
 			templateSelection: selection,
-            templateResult: formatState,
+			templateResult: formatState,
 			escapeMarkup: function (state) {
 				return state;
 			},
@@ -186,7 +189,7 @@
 	function scrollToAnchor(hash) {
 		var target = $(hash),
 			headerHeight = $('#main-header').outerHeight() + 20; // Get fixed header height
-            
+
 		target = target.length ? target : $('[name=' + hash.slice(1) + ']');
 
 		if (target.length) {

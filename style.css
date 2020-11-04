@@ -286,9 +286,9 @@ Version: 0.1
 
 .chm-search .searchBy-lo-name, .chm-search .searchBy-lo-near { padding-bottom: 0; }
 
-.chm-branch-states .select2-selection--single { font-size: 16px; height: 56px !important; border-radius: 0; border-color: #a6a6a6; padding: 10px 16px 10px 10px !important; }
+.chm-branch-states .select2-selection--single { font-size: 16px; height: 51px !important; border-radius: 0; border-color: #a6a6a6; padding: 10px 16px 10px 10px !important; }
 
-.chm-branch-states .select2-selection--single .select2-selection__arrow { height: 56px; }
+.chm-branch-states .select2-selection--single .select2-selection__arrow { height: 51px; }
 
 body.geodir-page-search #main-content, body.geodir-page-location #main-content { background-image: url(https://chmretaildev.wpengine.com/wp-content/uploads/bg-branches.jpg); background-repeat: no-repeat; background-position: top center; background-size: contain; }
 

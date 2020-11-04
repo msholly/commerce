@@ -180,7 +180,7 @@ body.geodir-page-search, body.geodir-page-location {
 .geodir-pagination ul.page-numbers li {
 	padding: 0;
 	overflow: hidden;
-	border-color: #a6a6a6;
+	border-color: #a6a6a6 !important;
 
 	.page-numbers {
 		color: #174170 !important;
@@ -188,7 +188,7 @@ body.geodir-page-search, body.geodir-page-location {
 		display: block;
 
 		&.current {
-			color: #FFF;
+			color: #FFF !important;
 			background-color: #174170;
 		}
 	}

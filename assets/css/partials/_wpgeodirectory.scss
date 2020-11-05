@@ -121,6 +121,12 @@
 	}
 }
 
+body.geodir-no-results #main-content .container {
+	max-width: 100%;
+	width: 100%;
+	padding-top: 0
+}
+
 .chm-branch-states {
 	.select2-selection--single {
 		font-size: 16px;
@@ -136,7 +142,8 @@
 }
 
 // Search Results page 
-body.geodir-page-search, body.geodir-page-location {
+body.geodir-page-search,
+body.geodir-page-location {
 	#main-content {
 		background-image: url(https://chmretaildev.wpengine.com/wp-content/uploads/bg-branches.jpg);
 		background-repeat: no-repeat;

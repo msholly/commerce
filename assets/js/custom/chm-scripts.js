@@ -12,7 +12,7 @@
 
 			// custom placeholder 
 			$(".gd-search-field-search input").attr("placeholder", "Search By Name");
-			$(".gd-search-field-near input").attr("placeholder", "e.g. Irvine, CA or 92606");
+			$(".gd-search-field-near input").attr("placeholder", "Search by City, State, or Zip");
 
 			// default to LO search by geo
 			if (stype == 'gd_loan_officer') {

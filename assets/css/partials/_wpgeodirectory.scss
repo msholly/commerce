@@ -159,6 +159,9 @@ body.geodir-no-results #main-content .container {
 		}
 	}
 
+	.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+		border-color: transparent transparent #174170 transparent !important;
+	}
 }
 
 // Search Results page 
@@ -732,15 +735,20 @@ body.single-gd_place {
 // Page /about/branches/ styling 
 body.page-id-3621 {
 	.geodir-listings {
+		border-bottom: 1px solid #a6a6a6;
+		padding-bottom: 10px;
+		margin-bottom: 30px;
+
 		.widgettitle {
 			color: #174170;
-			font-size: 26px;
+			font-size: 36px;
 			margin-top: 25px;
 			padding: 0
 		}
 
 		.geodir-entry-title {
-			color: #174170
+			color: #174170;
+			font-size: 24px;
 		}
 
 		.gd-list-item-left {
@@ -749,6 +757,7 @@ body.page-id-3621 {
 
 		.geodir_post_meta {
 			line-height: normal;
+			font-size: 14px;
 
 			a {
 				color: #174170;

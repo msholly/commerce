@@ -68,6 +68,7 @@ body.geodir-no-results #main-content .container{max-width:100%;width:100%;paddin
 .chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single .select2-selection__placeholder{line-height:28px !important}
 .chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single .select2-selection__arrow{top:0;right:15px;height:73px}
 .chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single .select2-selection__arrow b{border-color:#174170 transparent transparent transparent}
+.chm-branch-states .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #174170 transparent !important}
 body.geodir-page-search #main-content,body.geodir-page-location #main-content{background-image:url(https://chmretaildev.wpengine.com/wp-content/uploads/bg-branches.jpg);background-repeat:no-repeat;background-position:top center;background-size:contain}
 body.geodir-page-search .geodir-category-list-view .geodir-image-container ul.geodir-images li,body.geodir-page-location .geodir-category-list-view .geodir-image-container ul.geodir-images li{border-radius:50%;padding-bottom:25% !important}
 body.geodir-page-search .geodir-category-list-view .gd-list-item-right,body.geodir-page-location .geodir-category-list-view .gd-list-item-right{text-align:center}
@@ -157,10 +158,11 @@ body.single-gd_place .team-photos .geodir-post-slider .widgettitle{padding-botto
 .main_map_wrapper .gm-style .geodir-bubble-meta-top .geodir-post-title h4 a{color:#3c3c3e !important}
 .main_map_wrapper .gm-style .geodir-bubble-meta-top .geodir-post-address-container{font-size:14px;line-height:22px}
 .main_map_wrapper .gm-style .geodir-field-business_hours{margin-top:10px}
-body.page-id-3621 .geodir-listings .widgettitle{color:#174170;font-size:26px;margin-top:25px;padding:0}
-body.page-id-3621 .geodir-listings .geodir-entry-title{color:#174170}
+body.page-id-3621 .geodir-listings{border-bottom:1px solid #a6a6a6;padding-bottom:10px;margin-bottom:30px}
+body.page-id-3621 .geodir-listings .widgettitle{color:#174170;font-size:36px;margin-top:25px;padding:0}
+body.page-id-3621 .geodir-listings .geodir-entry-title{color:#174170;font-size:24px}
 body.page-id-3621 .geodir-listings .gd-list-item-left{display:none !important}
-body.page-id-3621 .geodir-listings .geodir_post_meta{line-height:normal}
+body.page-id-3621 .geodir-listings .geodir_post_meta{line-height:normal;font-size:14px}
 body.page-id-3621 .geodir-listings .geodir_post_meta a{color:#174170}
 body.page-id-3621 .geodir-listings .gd-badge-meta-view-branch{display:none}
 .mapsvg-popover::before{border-top-color:#818181 !important}

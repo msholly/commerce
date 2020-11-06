@@ -63,8 +63,11 @@
 .chm-search .geodir-search-container.stype-gd_loan_officer .gd-suggestions-dropdown li.gdas-section-title{display:none}
 .chm-search .searchBy-lo-name,.chm-search .searchBy-lo-near{padding-bottom:0}
 body.geodir-no-results #main-content .container{max-width:100%;width:100%;padding-top:0}
-.chm-branch-states .select2-selection--single{font-size:16px;height:51px !important;border-radius:0;border-color:#a6a6a6;padding:10px 16px 10px 10px !important}
-.chm-branch-states .select2-selection--single .select2-selection__arrow{height:51px}
+.chm-branch-states #select2-ajax-branch+.select2{background:#f3f3f3;border:1px #e6e6e6 solid;padding:10px}
+.chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single{font-size:16px;height:51px !important;border-radius:0;border-color:#a6a6a6;padding:10px 16px 10px 10px !important}
+.chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single .select2-selection__placeholder{line-height:28px !important}
+.chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single .select2-selection__arrow{top:0;right:15px;height:73px}
+.chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single .select2-selection__arrow b{border-color:#174170 transparent transparent transparent}
 body.geodir-page-search #main-content,body.geodir-page-location #main-content{background-image:url(https://chmretaildev.wpengine.com/wp-content/uploads/bg-branches.jpg);background-repeat:no-repeat;background-position:top center;background-size:contain}
 body.geodir-page-search .geodir-category-list-view .geodir-image-container ul.geodir-images li,body.geodir-page-location .geodir-category-list-view .geodir-image-container ul.geodir-images li{border-radius:50%;padding-bottom:25% !important}
 body.geodir-page-search .geodir-category-list-view .gd-list-item-right,body.geodir-page-location .geodir-category-list-view .gd-list-item-right{text-align:center}

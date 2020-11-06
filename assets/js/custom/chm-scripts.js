@@ -51,9 +51,9 @@
 		});
 
 		// Always removes GD Suggestions on focus out
-		$("input.snear").focusout(function () {
-			$(this).next(".gdlm-location-suggestions").hide();
-		});
+		// $("input.snear").focusout(function () {
+		// 	$(this).next(".gdlm-location-suggestions").hide();
+		// });
 
 		// page-id-3621 is /about/branches/ 
 		// Anchor link scrolls to state listings

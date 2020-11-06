@@ -46,21 +46,21 @@
 .et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-title,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-meta,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-content{width:67%;float:right}
 .overlay-container .nf-form-content{padding:0}
 .chm-search{top:0 !important}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar{padding:0 0 10px 0;border-top:1px transparent solid;border-bottom:1px transparent solid;margin:0}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper{margin-left:0 !important}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .geodir-search-input-label{top:15px;left:13px;font-size:16px}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper input[type=text],.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .geodir-search-input-label+input.search_text,.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .search_by_post{padding:16px 16px 16px 35px !important;padding-left:35px !important;font-size:16px;height:56px;border-radius:0;border-color:#a6a6a6}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .search_by_post{padding-left:16px !important}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .snear+.gdlm-location-suggestions{top:55px;border-top-color:#a6a6a6;font-size:16px}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .snear+.gdlm-location-suggestions .fas{min-width:16px;text-align:center;margin-right:6px}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .gd_search_text+.gdas-search-suggestions{top:55px;border-top-color:#a6a6a6}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .geodir_submit_search{background-color:#174170;border:0;color:#FFF;margin-top:0;margin-bottom:0;height:56px;min-width:50px;border-radius:0}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .gd-suggestions-dropdown ul{padding:0}
-.chm-search form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .gd-suggestions-dropdown ul li{padding:5px 10px}
-.chm-search form.geodir-listing-search.gd-search-bar-style.gd_place .gd-search-field-search{display:none}
-.chm-search form.geodir-listing-search.gd-search-bar-style.gd_loan_officer .gd-suggestions-dropdown li{font-size:16px;padding-left:20px !important}
-.chm-search form.geodir-listing-search.gd-search-bar-style.gd_loan_officer .gd-suggestions-dropdown li .gdasac-icon{width:75px;border-radius:50%;margin-right:5px}
-.chm-search form.geodir-listing-search.gd-search-bar-style.gd_loan_officer .gd-suggestions-dropdown li.gdas-section-title{display:none}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar{padding:0 0 10px 0;border-top:1px transparent solid;border-bottom:1px transparent solid;margin:0}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper{margin-left:0 !important}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .geodir-search-input-label{top:15px;left:13px;font-size:16px}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper input[type=text],.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .geodir-search-input-label+input.search_text,.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .search_by_post{padding:16px 16px 16px 35px !important;padding-left:35px !important;font-size:16px;height:56px;border-radius:0;border-color:#a6a6a6}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .search_by_post{padding-left:16px !important}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .snear+.gdlm-location-suggestions{top:55px;border-top-color:#a6a6a6;font-size:16px}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .snear+.gdlm-location-suggestions .fas{min-width:16px;text-align:center;margin-right:6px}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .gd-search-input-wrapper .gd_search_text+.gdas-search-suggestions{top:55px;border-top-color:#a6a6a6}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .clearfix.geodir-loc-bar-in .geodir-search .geodir_submit_search{background-color:#174170;border:0;color:#FFF;margin-top:0;margin-bottom:0;height:56px;min-width:50px;border-radius:0}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .gd-suggestions-dropdown ul{padding:0}
+.chm-search .geodir-search-container form.geodir-listing-search.gd-search-bar-style .geodir-loc-bar .gd-suggestions-dropdown ul li{padding:5px 10px}
+.chm-search .geodir-search-container.stype-gd_place .gd-search-field-search{display:none !important}
+.chm-search .geodir-search-container.stype-gd_loan_officer .gd-suggestions-dropdown li{font-size:16px;padding-left:20px !important}
+.chm-search .geodir-search-container.stype-gd_loan_officer .gd-suggestions-dropdown li .gdasac-icon{width:75px;border-radius:50%;margin-right:5px}
+.chm-search .geodir-search-container.stype-gd_loan_officer .gd-suggestions-dropdown li.gdas-section-title{display:none}
 .chm-search .searchBy-lo-name,.chm-search .searchBy-lo-near{padding-bottom:0}
 body.geodir-no-results #main-content .container{max-width:100%;width:100%;padding-top:0}
 .chm-branch-states .select2-selection--single{font-size:16px;height:51px !important;border-radius:0;border-color:#a6a6a6;padding:10px 16px 10px 10px !important}

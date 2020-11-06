@@ -3,92 +3,95 @@
 .chm-search {
 	top: 0 !important;
 
-	form.geodir-listing-search.gd-search-bar-style {
+	.geodir-search-container {
 
-		// Global styles
-		.geodir-loc-bar {
-			padding: 0px 0 10px 0;
-			border-top: 1px transparent solid;
-			border-bottom: 1px transparent solid;
-			margin: 0;
-
-			.clearfix.geodir-loc-bar-in {
-
-				.geodir-search {
-					.gd-search-input-wrapper {
-						margin-left: 0 !important;
-
-						.geodir-search-input-label {
-							top: 15px;
-							left: 13px;
-							font-size: 16px;
-						}
-
-						input[type=text],
-						.geodir-search-input-label+input.search_text,
-						.search_by_post {
-							padding: 16px 16px 16px 35px !important;
-							padding-left: 35px !important;
-							font-size: 16px;
-							height: 56px;
-							border-radius: 0;
-							border-color: #a6a6a6;
-						}
-
-						.search_by_post {
-							padding-left: 16px !important;
-						}
-
-						.snear+.gdlm-location-suggestions {
-							top: 55px;
-							border-top-color: #a6a6a6;
-							font-size: 16px;
-
-							.fas {
-								min-width: 16px;
-								text-align: center;
-								margin-right: 6px;
-							}
-						}
-
-						.gd_search_text+.gdas-search-suggestions {
-							top: 55px;
-							border-top-color: #a6a6a6;
-						}
-					}
-
-					.geodir_submit_search {
-						background-color: #174170;
-						border: none;
-						color: #FFF;
-						margin-top: 0;
-						margin-bottom: 0;
-						height: 56px;
-						min-width: 50px;
-						border-radius: 0;
-					}
-				}
-
-			}
-
-			.gd-suggestions-dropdown ul {
-				padding: 0;
-
-				li {
-					padding: 5px 10px;
-				}
-			}
-		}
+        // Global styles
+        form.geodir-listing-search.gd-search-bar-style {
+            .geodir-loc-bar {
+                padding: 0px 0 10px 0;
+                border-top: 1px transparent solid;
+                border-bottom: 1px transparent solid;
+                margin: 0;
+    
+                .clearfix.geodir-loc-bar-in {
+    
+                    .geodir-search {
+                        .gd-search-input-wrapper {
+                            margin-left: 0 !important;
+    
+                            .geodir-search-input-label {
+                                top: 15px;
+                                left: 13px;
+                                font-size: 16px;
+                            }
+    
+                            input[type=text],
+                            .geodir-search-input-label+input.search_text,
+                            .search_by_post {
+                                padding: 16px 16px 16px 35px !important;
+                                padding-left: 35px !important;
+                                font-size: 16px;
+                                height: 56px;
+                                border-radius: 0;
+                                border-color: #a6a6a6;
+                            }
+    
+                            .search_by_post {
+                                padding-left: 16px !important;
+                            }
+    
+                            .snear+.gdlm-location-suggestions {
+                                top: 55px;
+                                border-top-color: #a6a6a6;
+                                font-size: 16px;
+    
+                                .fas {
+                                    min-width: 16px;
+                                    text-align: center;
+                                    margin-right: 6px;
+                                }
+                            }
+    
+                            .gd_search_text+.gdas-search-suggestions {
+                                top: 55px;
+                                border-top-color: #a6a6a6;
+                            }
+                        }
+    
+                        .geodir_submit_search {
+                            background-color: #174170;
+                            border: none;
+                            color: #FFF;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            height: 56px;
+                            min-width: 50px;
+                            border-radius: 0;
+                        }
+                    }
+    
+                }
+    
+                .gd-suggestions-dropdown ul {
+                    padding: 0;
+    
+                    li {
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+	
 
 		// Branch search
-		&.gd_place {
+		&.stype-gd_place {
 			.gd-search-field-search {
-				display: none;
+				display: none !important;
 			}
 		}
 
 		// LO Search 
-		&.gd_loan_officer {
+		&.stype-gd_loan_officer {
 			.gd-suggestions-dropdown {
 				li {
 					font-size: 16px;

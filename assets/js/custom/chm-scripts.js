@@ -7,24 +7,34 @@
 		$("form.geodir-listing-search").each(function (i) {
 			var stype = $(this).find("input[name='stype']").val();
 
+			if (typeof stype == 'undefined') {
+				stype = $(this).find("select[name='stype']").val();
+			}
+			console.log(stype)
+
+			// Remove Philanthopies, Team
+			removeGdCpt()
+
 			// add class to its form for easier styling and targeting
-			$(this).closest("form").addClass(stype)
+			$('.geodir-search-container').addClass("stype-" + stype)
 
 			// custom placeholder 
 			$(".gd-search-field-search input").attr("placeholder", "Search By Name");
 			$(".gd-search-field-near input").attr("placeholder", "Search by City, State, or Zip");
 
 			// default to LO search by geo
-			if (stype == 'gd_loan_officer') {
-				$('form.gd_loan_officer .gd-search-field-search, .searchBy-lo-name').hide();
+			if (stype == 'gd_loan_officer' && !$("body").hasClass("geodir-page-search")) {
+				$('.stype-gd_loan_officer .gd-search-field-search, .searchBy-lo-name').hide();
 			}
 		});
+
+
 
 		// Toggle LO search visibility
 		$(".chm-search").on('click', '.chm-toggle-lo-search', function (event) {
 			event.preventDefault();
-			var nearToggle = $('.searchBy-lo-near, form.gd_loan_officer .gd-search-field-near'),
-				nameToggle = $('.searchBy-lo-name, form.gd_loan_officer .gd-search-field-search')
+			var nearToggle = $('.searchBy-lo-near, .stype-gd_loan_officer .gd-search-field-near'),
+				nameToggle = $('.searchBy-lo-name, .stype-gd_loan_officer .gd-search-field-search')
 
 			if (this.id == 'search-toggle-lo-name') {
 				nearToggle.hide();
@@ -159,6 +169,24 @@
 	});
 
 
+	$('.geodir-search-container').on('change', 'select', function () {
+		removeGdCpt();
+		var stype = $(".search_by_post option:selected").val();
+		$('.geodir-search-container').removeClass(function (index, className) {
+			return (className.match(/\bstype-\S+/g) || []).join(' ');
+		});
+		$('.geodir-search-container').addClass("stype-" + stype)
+	});
+
+	$(document).ajaxComplete(function () {
+		removeGdCpt();
+	});
+
+	function removeGdCpt() {
+		$("form.geodir-listing-search .search_by_post option[value='gd_lo_team']").remove();
+		$("form.geodir-listing-search .search_by_post option[value='gd_philanthropy']").remove();
+	}
+
 	function formatState(state) {
 		if (!state.id) {
 			return state.text;
@@ -203,17 +231,5 @@
 	if (window.location.hash) {
 		scrollToAnchor(window.location.hash);
 	}
-
-
-	// $("a[href*=\\#]:not([href=\\#])").click(function()
-	// {
-	//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-	//         || location.hostname == this.hostname)
-	//     {
-
-	//         scrollToAnchor(this.hash);
-	//     }
-	// });
-
 
 })(jQuery);

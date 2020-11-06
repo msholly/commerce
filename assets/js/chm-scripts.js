@@ -40,10 +40,10 @@
         $(".gd-icon-hover-swap").click();
       }
     }); // Always removes GD Suggestions on focus out
-    // $("input.snear").focusout(function () {
-    // 	$(this).next(".gdlm-location-suggestions").hide();
-    // });
-    // page-id-3621 is /about/branches/ 
+
+    $("input.snear").focusout(function () {
+      $(this).next(".gdlm-location-suggestions").hide();
+    }); // page-id-3621 is /about/branches/ 
     // Anchor link scrolls to state listings
 
     if ($("body").hasClass("page-id-3621")) {

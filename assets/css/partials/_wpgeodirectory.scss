@@ -749,6 +749,7 @@ body.page-id-3621 {
 		.geodir-entry-title {
 			color: #174170;
 			font-size: 24px;
+			font-weight: normal;
 		}
 
 		.gd-list-item-left {
@@ -766,6 +767,38 @@ body.page-id-3621 {
 
 		.gd-badge-meta-view-branch {
 			display: none;
+		}
+
+		// Linked from licenses
+		.geodir-linked-posts {
+			.widgettitle {
+				font-size: 14px;
+				margin-top: 10px;
+			}
+
+			.gd_license {
+				margin: 0 !important;
+				padding: 0 !important;
+				display: inline;
+				width: unset;
+
+				.geodir_post_meta {
+					display: inline;
+
+					&:after {
+						content: ", ";
+					}
+
+				}
+
+				&:last-child .geodir_post_meta::after {
+					content: '';
+				}
+			}
+
+			.geodir-linked-posts {
+				display: none;
+			}
 		}
 	}
 }

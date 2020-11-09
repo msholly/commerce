@@ -5,15 +5,16 @@
 	$(document).ready(function () {
 
 		$("form.geodir-listing-search").each(function (i) {
+			// If CPT Select is not active, look for stype in an input
 			var stype = $(this).find("input[name='stype']").val();
 
 			if (typeof stype == 'undefined') {
+				// If CPT Select is active (like on /search page), look for stype in select 
 				stype = $(this).find("select[name='stype']").val();
 			}
-			console.log(stype)
 
-			// Remove Philanthopies, Team
-			removeGdCpt()
+			// Remove Philanthopies, Team Members, Licenses from CPT Select
+			removeGdCpt();
 
 			// add class to its form for easier styling and targeting
 			$('.geodir-search-container').addClass("stype-" + stype)
@@ -46,11 +47,11 @@
 				nameToggle.hide();
 				// Mimcis Geodir's native clear input fields
 				$(".gd-icon-hover-swap").click();
-
 			}
 		});
 
 		// Always removes GD Suggestions on focus out
+		// Temp disable, pending ticket with vendor. This function currently prevents auto-fill of location input (bug)
 		// $("input.snear").focusout(function () {
 		// 	$(this).next(".gdlm-location-suggestions").hide();
 		// });
@@ -65,36 +66,18 @@
 			});
 
 			$("#select2-ajax-branch").on("select2:select", function (e) {
-				console.log(e.params.data.id)
-				// window.location.hash = e.params.data.id;
 				scrollToAnchor("#" + e.params.data.id);
+				// Add hash for shareable URL that auto-scrolls to state
+				window.location.hash = e.params.data.id;
 			});
 
-			$.ajax({
-				type: "GET",
-				dataType: "json",
-				async: true,
-				url: "https://chmretaildev.wpengine.com/wp-json/geodir/v2/locations/regions",
-				data: ({}),
-				success: function (data) {
-					var formatted = $.map(data, function (obj) {
-						obj.id = obj.id || obj.slug; // unique ID needed
-						obj.text = obj.title // title needed for proper search
-						return obj;
-					});
+			// Get Branches
+			chmGetStates();
 
-					var sorted = formatted.sort(function (a, b) {
-						if (a.title < b.title) {
-							return -1;
-						}
-						if (a.title > b.title) {
-							return 1;
-						}
-						return 0;
-					});
-					makeSelect2(sorted);
-				}
-			});
+			if (window.location.hash) {
+				// Support shareable URL for specific State (scrollTo)
+				scrollToAnchor(window.location.hash);
+			}
 		}
 
 		// IF Loan Officer Detail page
@@ -110,7 +93,7 @@
 
 		}
 
-		// IF Loan Officer Detail page
+		// IF Branch Detail page
 		if ($("body").hasClass("single-gd_place")) {
 
 			// Hides a Regional Manager's profile in Our Team if they exist in both Regional Manager and Our Team sections
@@ -134,6 +117,7 @@
 		}
 
 		if (typeof Handlebars !== 'undefined') {
+			// MAP SVG Handlebar template to show states in Alpha order
 			Handlebars.registerHelper('each_with_sort', function (array, key, opts) {
 				var data, e, i, j, len, s;
 				if (opts.data) {
@@ -171,8 +155,10 @@
 
 	$('.geodir-search-container').on('change', 'select', function () {
 		removeGdCpt();
+		// On /search page, watch CPT Select and update wrapper with current active search type
 		var stype = $(".search_by_post option:selected").val();
 		$('.geodir-search-container').removeClass(function (index, className) {
+			// Remove previously active stype
 			return (className.match(/\bstype-\S+/g) || []).join(' ');
 		});
 		$('.geodir-search-container').addClass("stype-" + stype)
@@ -185,6 +171,7 @@
 	function removeGdCpt() {
 		$("form.geodir-listing-search .search_by_post option[value='gd_lo_team']").remove();
 		$("form.geodir-listing-search .search_by_post option[value='gd_philanthropy']").remove();
+		$("form.geodir-listing-search .search_by_post option[value='gd_license']").remove();
 	}
 
 	function formatState(state) {
@@ -203,6 +190,7 @@
 	}
 
 	function makeSelect2(data) {
+		// Local search needs non-ajax select2 instance
 		$('#select2-ajax-branch').select2({
 			data: data,
 			templateSelection: selection,
@@ -228,8 +216,33 @@
 		}
 	}
 
-	if (window.location.hash) {
-		scrollToAnchor(window.location.hash);
+	function chmGetStates() {
+		$.ajax({
+			type: "GET",
+			dataType: "json",
+			async: true,
+			url: "https://chmretaildev.wpengine.com/wp-json/geodir/v2/locations/regions",
+			data: ({}),
+			success: function (data) {
+				var formatted = $.map(data, function (obj) {
+					obj.id = obj.id || obj.slug; // unique ID needed for select2
+					obj.text = obj.title // title needed for proper search
+					return obj;
+				});
+
+				// Alpha sort
+				var sorted = formatted.sort(function (a, b) {
+					if (a.title < b.title) {
+						return -1;
+					}
+					if (a.title > b.title) {
+						return 1;
+					}
+					return 0;
+				});
+				makeSelect2(sorted);
+			}
+		});
 	}
 
 })(jQuery);

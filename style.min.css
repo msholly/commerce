@@ -160,11 +160,17 @@ body.single-gd_place .team-photos .geodir-post-slider .widgettitle{padding-botto
 .main_map_wrapper .gm-style .geodir-field-business_hours{margin-top:10px}
 body.page-id-3621 .geodir-listings{border-bottom:1px solid #a6a6a6;padding-bottom:10px;margin-bottom:30px}
 body.page-id-3621 .geodir-listings .widgettitle{color:#174170;font-size:36px;margin-top:25px;padding:0}
-body.page-id-3621 .geodir-listings .geodir-entry-title{color:#174170;font-size:24px}
+body.page-id-3621 .geodir-listings .geodir-entry-title{color:#174170;font-size:24px;font-weight:normal}
 body.page-id-3621 .geodir-listings .gd-list-item-left{display:none !important}
 body.page-id-3621 .geodir-listings .geodir_post_meta{line-height:normal;font-size:14px}
 body.page-id-3621 .geodir-listings .geodir_post_meta a{color:#174170}
 body.page-id-3621 .geodir-listings .gd-badge-meta-view-branch{display:none}
+body.page-id-3621 .geodir-listings .geodir-linked-posts .widgettitle{font-size:14px;margin-top:10px}
+body.page-id-3621 .geodir-listings .geodir-linked-posts .gd_license{margin:0 !important;padding:0 !important;display:inline;width:unset}
+body.page-id-3621 .geodir-listings .geodir-linked-posts .gd_license .geodir_post_meta{display:inline}
+body.page-id-3621 .geodir-listings .geodir-linked-posts .gd_license .geodir_post_meta:after{content:", "}
+body.page-id-3621 .geodir-listings .geodir-linked-posts .gd_license:last-child .geodir_post_meta::after{content:''}
+body.page-id-3621 .geodir-listings .geodir-linked-posts .geodir-linked-posts{display:none}
 .mapsvg-popover::before{border-top-color:#818181 !important}
 .mapsvg-popover .mapsvg-popover-close{top:6px;right:-13px}
 .mapsvg-popover .mapsvg-controller-view-content{padding-top:38px !important;padding-left:0;padding-right:0;padding-bottom:0;background-color:#FFF}

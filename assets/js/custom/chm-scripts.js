@@ -61,7 +61,7 @@
 		if ($("body").hasClass("page-id-3621")) {
 			$(".geodir-listings .widgettitle").each(function (i) {
 				var heading = $(this);
-				var headingtext = heading.text().toLowerCase().trim().replace(/[\.,-\/#!?$%\^&\*;:{}=\-_`~()]/g, "").replace(' ', '-');
+				var headingtext = heading.text().toLowerCase().trim().replace(/[\.,-\/#!?$%\^&\*;:{}=\-_`~()]/g, "").replace(/ +/g,'-');
 				heading.attr("id", headingtext);
 			});
 
@@ -178,7 +178,7 @@
 		if (!state.id) {
 			return state.text;
 		}
-		var state1 = state.title;
+		var state1 = state.region;
 		return state1;
 	};
 
@@ -186,7 +186,7 @@
 		if (state.id === '') { // adjust for custom placeholder values
 			return 'Search by State';
 		}
-		return state.title;
+		return state.region;
 	}
 
 	function makeSelect2(data) {
@@ -221,25 +221,28 @@
 			type: "GET",
 			dataType: "json",
 			async: true,
-			url: "https://chmretaildev.wpengine.com/wp-json/geodir/v2/locations/regions",
+			url: "https://chmretaildev.wpengine.com/wp-json/geodir/v2/licenses?per_page=50",
 			data: ({}),
 			success: function (data) {
+                
 				var formatted = $.map(data, function (obj) {
-					obj.id = obj.id || obj.slug; // unique ID needed for select2
-					obj.text = obj.title // title needed for proper search
+					obj.id = obj.slug; // unique ID needed for select2
+					obj.text = obj.region // title needed for proper search
 					return obj;
 				});
 
 				// Alpha sort
 				var sorted = formatted.sort(function (a, b) {
-					if (a.title < b.title) {
+					if (a.region < b.region) {
 						return -1;
 					}
-					if (a.title > b.title) {
+					if (a.region > b.region) {
 						return 1;
 					}
 					return 0;
-				});
+                });
+                
+                console.log(sorted)
 				makeSelect2(sorted);
 			}
 		});

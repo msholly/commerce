@@ -10,6 +10,9 @@ function theme_enqueue_styles()
 // Shortcode for Select2 Search
 require_once 'includes/search-shortcode.php';
 
+// Geo Directory State Abbreviation change 
+require_once 'includes/gd-state-abbrev.php';
+
 
 //======================================================================
 // CUSTOM DASHBOARD

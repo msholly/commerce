@@ -221,7 +221,7 @@
 			type: "GET",
 			dataType: "json",
 			async: true,
-			url: "https://chmretaildev.wpengine.com/wp-json/geodir/v2/licenses?per_page=50",
+			url: document.location.origin + "/wp-json/geodir/v2/licenses?per_page=50",
 			data: ({}),
 			success: function (data) {
                 

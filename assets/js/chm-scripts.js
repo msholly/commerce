@@ -220,8 +220,9 @@
         var formatted = $.map(data, function (obj) {
           obj.id = obj.slug; // unique ID needed for select2
 
-          obj.text = obj.region; // title needed for proper search
+          obj.text = obj.state_abbreviation + " - " + obj.region; // title needed for proper search
 
+          console.log(obj.text);
           return obj;
         }); // Alpha sort
 

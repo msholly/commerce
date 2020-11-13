@@ -538,7 +538,39 @@ body.post-type-archive-gd_place {
 body.single-gd_place {
 	.geodir-field-business_hours {
 		padding-top: 10px;
-	}
+    }
+    
+    .chm-branch-licenses {
+        .widgettitle {
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .geodir_location_listing {
+            display: inline;
+            .geodir-category-list-view {
+                .gd_license {
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    display: inline;
+                    width: unset;
+    
+                    .geodir_post_meta {
+                        display: inline;
+                        font-size: 14px;
+    
+                        &:after {
+                            content: ", ";
+                        }
+    
+                    }
+    
+                    &:last-child .geodir_post_meta::after {
+                        content: '';
+                    }
+                }
+            }
+        }
+    }
 
 	.branch-static-quote {
 		.geodir-field-static_featured_quote_content {

@@ -127,6 +127,12 @@ body.post-type-archive-gd_place .geodir-field-city{display:inline}
 body.post-type-archive-gd_place .geodir-field-region{display:inline}
 body.post-type-archive-gd_place .geodir-field-zip{display:inline}
 body.single-gd_place .geodir-field-business_hours{padding-top:10px}
+body.single-gd_place .chm-branch-licenses .widgettitle{display:inline-block;padding-bottom:5px}
+body.single-gd_place .chm-branch-licenses .geodir_location_listing{display:inline}
+body.single-gd_place .chm-branch-licenses .geodir_location_listing .geodir-category-list-view .gd_license{margin:0 !important;padding:0 !important;display:inline;width:unset}
+body.single-gd_place .chm-branch-licenses .geodir_location_listing .geodir-category-list-view .gd_license .geodir_post_meta{display:inline;font-size:14px}
+body.single-gd_place .chm-branch-licenses .geodir_location_listing .geodir-category-list-view .gd_license .geodir_post_meta:after{content:", "}
+body.single-gd_place .chm-branch-licenses .geodir_location_listing .geodir-category-list-view .gd_license:last-child .geodir_post_meta::after{content:''}
 body.single-gd_place .branch-static-quote .geodir-field-static_featured_quote_content{padding:30px 40px;font-size:20px;line-height:30px;color:#174170 !important}
 body.single-gd_place .branch-static-quote .geodir-field-static_featured_quote_author{padding-bottom:32px;font-weight:700;color:#174170 !important}
 body.single-gd_place .branch-regional-manager .gd_loan_officer .geodir-post-image{text-align:center}

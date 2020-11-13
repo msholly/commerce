@@ -175,9 +175,15 @@ body.geodir-page-location {
 	}
 
 	.geodir-category-list-view {
-		.geodir-image-container ul.geodir-images li {
-			border-radius: 50%;
-			padding-bottom: 25% !important;
+		.geodir-image-container ul.geodir-images {
+			text-align: center;
+
+			li {
+				border-radius: 50%;
+				padding-bottom: 21% !important;
+				max-width: 200px;
+				max-height: 200px;
+			}
 		}
 
 		.gd-list-item-right {
@@ -185,9 +191,10 @@ body.geodir-page-location {
 
 			.geodir-entry-title {
 				margin-top: 10px;
+				font-weight: 300;
 
 				a {
-					font-size: 18px;
+					font-size: 20px;
 					color: #174170 !important;
 				}
 			}
@@ -195,10 +202,44 @@ body.geodir-page-location {
 			.geodir_post_meta {
 				line-height: normal;
 
+				&.geodir-field-job_title {
+					font-size: 16px;
+					font-weight: 300;
+				}
+
 				a {
 					color: #174170 !important;
 				}
 			}
+		}
+
+		.geodir-linked-posts {
+
+			.widgettitle {
+				font-size: 14px;
+				margin-top: 10px;
+			}
+
+			.gd_license {
+				margin: 0 !important;
+				padding: 0 !important;
+				display: inline;
+				width: unset;
+
+				.geodir_post_meta {
+					display: inline;
+
+					&:after {
+						content: ", ";
+					}
+
+				}
+
+				&:last-child .geodir_post_meta::after {
+					content: '';
+				}
+			}
+
 		}
 
 	}
@@ -538,39 +579,41 @@ body.post-type-archive-gd_place {
 body.single-gd_place {
 	.geodir-field-business_hours {
 		padding-top: 10px;
-    }
-    
-    .chm-branch-licenses {
-        .widgettitle {
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        .geodir_location_listing {
-            display: inline;
-            .geodir-category-list-view {
-                .gd_license {
-                    margin: 0 !important;
-                    padding: 0 !important;
-                    display: inline;
-                    width: unset;
-    
-                    .geodir_post_meta {
-                        display: inline;
-                        font-size: 14px;
-    
-                        &:after {
-                            content: ", ";
-                        }
-    
-                    }
-    
-                    &:last-child .geodir_post_meta::after {
-                        content: '';
-                    }
-                }
-            }
-        }
-    }
+	}
+
+	.chm-branch-licenses {
+		.widgettitle {
+			display: inline-block;
+			padding-bottom: 5px;
+		}
+
+		.geodir_location_listing {
+			display: inline;
+
+			.geodir-category-list-view {
+				.gd_license {
+					margin: 0 !important;
+					padding: 0 !important;
+					display: inline;
+					width: unset;
+
+					.geodir_post_meta {
+						display: inline;
+						font-size: 14px;
+
+						&:after {
+							content: ", ";
+						}
+
+					}
+
+					&:last-child .geodir_post_meta::after {
+						content: '';
+					}
+				}
+			}
+		}
+	}
 
 	.branch-static-quote {
 		.geodir-field-static_featured_quote_content {

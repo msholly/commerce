@@ -513,7 +513,7 @@ body.single-gd_loan_officer {
 	}
 
 	.lo-contact-info {
-
+        
 		.geodir_location_listing {
 			.gd_place.has-post-thumbnail {
 				padding-top: 0 !important;
@@ -522,7 +522,8 @@ body.single-gd_loan_officer {
 			.geodir-post-title {
 				h2 {
 					a {
-						font-size: 18px;
+                        color: #174170;
+						font-size: 22px;
 						font-weight: 500;
 						margin: 15px 0 10px 0;
 						display: block;
@@ -543,9 +544,15 @@ body.single-gd_loan_officer {
 				font-size: 14px;
 				line-height: 22px;
 				margin-bottom: 5px;
-			}
+            }
+            
+            .geodir-category-list-view .gd_place  {
+                border-bottom: 1px solid #A6A6A6;
+                margin-bottom: 15px;
+                padding-bottom: 15px !important;
+            }
 
-			.geodir-linked-posts {
+			.geodir-linked-posts {                
 				.widgettitle {
 					font-size: 16px;
 					color: #333 !important;

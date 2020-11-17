@@ -123,10 +123,11 @@ body.single-gd_loan_officer .geodir_location_listing .geodir-field-region{displa
 body.single-gd_loan_officer .geodir_location_listing .geodir-field-zip{display:inline}
 body.single-gd_loan_officer .geodir_location_listing .geodir-post-meta-container{font-size:14px;line-height:normal}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .gd_place.has-post-thumbnail{padding-top:0 !important}
-body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-post-title h2 a{font-size:18px;font-weight:500;margin:15px 0 10px 0;display:block}
+body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-post-title h2 a{color:#174170;font-size:22px;font-weight:500;margin:15px 0 10px 0;display:block}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir_post_meta{margin-bottom:0}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir_post_meta a{color:#174170 !important;-webkit-transition:color 300ms ease 0ms;transition:color 300ms ease 0ms}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-field-address{font-size:14px;line-height:22px;margin-bottom:5px}
+body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-category-list-view .gd_place{border-bottom:1px solid #a6a6a6;margin-bottom:15px;padding-bottom:15px !important}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-linked-posts .widgettitle{font-size:16px;color:#333 !important;text-align:left;padding:10px 0 5px 0}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-linked-posts .gd_license{margin:0 !important;padding:0 !important;display:inline;width:unset}
 body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-linked-posts .gd_license .geodir_post_meta{display:inline;font-size:14px}

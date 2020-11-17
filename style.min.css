@@ -134,6 +134,11 @@ body.post-type-archive-gd_place .geodir-field-city{display:inline}
 body.post-type-archive-gd_place .geodir-field-region{display:inline}
 body.post-type-archive-gd_place .geodir-field-zip{display:inline}
 body.single-gd_place .geodir-field-business_hours{padding-top:10px}
+body.single-gd_place .chm-branch-name .geodir-linked-posts{padding-top:5px}
+body.single-gd_place .chm-branch-name .geodir-linked-posts h4,body.single-gd_place .chm-branch-name .geodir-linked-posts .geodir_location_listing,body.single-gd_place .chm-branch-name .geodir-linked-posts .geodir-post-title{display:inline-block}
+body.single-gd_place .chm-branch-name .geodir-linked-posts ul li,body.single-gd_place .chm-branch-name .geodir-linked-posts .gd-list-item-right{display:inline;width:auto;padding:0 !important;margin:0;vertical-align:baseline}
+body.single-gd_place .chm-branch-name .geodir-linked-posts h2{font-size:18px}
+body.single-gd_place .chm-branch-name .geodir-linked-posts .gd-list-item-left,body.single-gd_place .chm-branch-name .geodir-linked-posts .geodir-post-meta-container,body.single-gd_place .chm-branch-name .geodir-linked-posts .gd-badge-meta{display:none}
 body.single-gd_place .chm-branch-licenses .widgettitle{display:inline-block;padding-bottom:5px}
 body.single-gd_place .chm-branch-licenses .geodir_location_listing{display:inline}
 body.single-gd_place .chm-branch-licenses .geodir_location_listing .geodir-category-list-view .gd_license{margin:0 !important;padding:0 !important;display:inline;width:unset}

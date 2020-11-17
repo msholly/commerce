@@ -121,7 +121,20 @@
 	.searchBy-lo-name,
 	.searchBy-lo-near {
 		padding-bottom: 0;
-	}
+    }
+    
+    // Sidebar widget search UI
+    &.chm-sidebar-search {
+        .gd-search-input-wrapper {
+            min-width: 100% !important;
+        }
+        .geodir_submit_search {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            height: 41px !important;
+            border-radius: 33px !important;
+        }
+    }
 }
 
 body.geodir-no-results #main-content .container {

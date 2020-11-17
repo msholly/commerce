@@ -62,6 +62,8 @@
 .chm-search .geodir-search-container.stype-gd_loan_officer .gd-suggestions-dropdown li .gdasac-icon{width:75px;border-radius:50%;margin-right:5px}
 .chm-search .geodir-search-container.stype-gd_loan_officer .gd-suggestions-dropdown li.gdas-section-title{display:none}
 .chm-search .searchBy-lo-name,.chm-search .searchBy-lo-near{padding-bottom:0}
+.chm-search.chm-sidebar-search .gd-search-input-wrapper{min-width:100% !important}
+.chm-search.chm-sidebar-search .geodir_submit_search{margin-left:0 !important;margin-right:0 !important;height:41px !important;border-radius:33px !important}
 body.geodir-no-results #main-content .container{max-width:100%;width:100%;padding-top:0}
 .chm-branch-states #select2-ajax-branch+.select2{background:#f3f3f3;border:1px #e6e6e6 solid;padding:10px}
 .chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single{font-size:16px;height:51px !important;border-radius:0;border-color:#a6a6a6;padding:10px 16px 10px 10px !important}

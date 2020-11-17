@@ -15,9 +15,9 @@
       removeGdCpt(); // add class to its form for easier styling and targeting
 
       $('.geodir-search-container').addClass("stype-" + stype); // custom placeholder 
-
-      $(".gd-search-field-search input").attr("placeholder", "Search By Name");
-      $(".gd-search-field-near input").attr("placeholder", "Search by City, State, or Zip"); // default to LO search by geo
+      // $(".gd-search-field-search input").attr("placeholder", "Search By Name");
+      // $(".gd-search-field-near input").attr("placeholder", "Search by City, State, or Zip");
+      // default to LO search by geo
 
       if (stype == 'gd_loan_officer' && !$("body").hasClass("geodir-page-search")) {
         $('.stype-gd_loan_officer .gd-search-field-search, .searchBy-lo-name').hide();

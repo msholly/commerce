@@ -20,8 +20,8 @@
 			$('.geodir-search-container').addClass("stype-" + stype)
 
 			// custom placeholder 
-			$(".gd-search-field-search input").attr("placeholder", "Search By Name");
-			$(".gd-search-field-near input").attr("placeholder", "Search by City, State, or Zip");
+			// $(".gd-search-field-search input").attr("placeholder", "Search By Name");
+			// $(".gd-search-field-near input").attr("placeholder", "Search by City, State, or Zip");
 
 			// default to LO search by geo
 			if (stype == 'gd_loan_officer' && !$("body").hasClass("geodir-page-search")) {

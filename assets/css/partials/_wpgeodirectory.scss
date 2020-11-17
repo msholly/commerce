@@ -513,6 +513,7 @@ body.single-gd_loan_officer {
 	}
 
 	.lo-contact-info {
+
 		.geodir_location_listing {
 			.gd_place.has-post-thumbnail {
 				padding-top: 0 !important;
@@ -531,12 +532,48 @@ body.single-gd_loan_officer {
 
 			.geodir_post_meta {
 				margin-bottom: 0;
+
+				a {
+					color: #174170 !important;
+					transition: color 300ms ease 0ms;
+				}
 			}
 
 			.geodir-field-address {
 				font-size: 14px;
 				line-height: 22px;
 				margin-bottom: 5px;
+			}
+
+			.geodir-linked-posts {
+				.widgettitle {
+					font-size: 16px;
+					color: #333 !important;
+					text-align: left;
+					padding: 10px 0 5px 0;
+				}
+
+				.gd_license {
+					margin: 0 !important;
+					padding: 0 !important;
+					display: inline;
+					width: unset;
+
+
+					.geodir_post_meta {
+						display: inline;
+						font-size: 14px;
+
+						&:after {
+							content: ", ";
+						}
+
+					}
+
+					&:last-child .geodir_post_meta::after {
+						content: '';
+					}
+				}
 			}
 
 			.gd-badge-meta-view-branch {
@@ -579,49 +616,58 @@ body.post-type-archive-gd_place {
 body.single-gd_place {
 	.geodir-field-business_hours {
 		padding-top: 10px;
-    }
-    
-    .chm-branch-name {
-        .geodir-linked-posts {
-            padding-top: 5px;
-            h4, .geodir_location_listing, .geodir-post-title {
-                display: inline-block
-              }
-              ul li, .gd-list-item-right {
-                display: inline;
-                width: auto;
-                padding: 0 !important;
-                margin: 0;
-                vertical-align: baseline;
-              }
-              h2 {
-                font-size: 18px;
-              }
-              .gd-list-item-left, .geodir-post-meta-container, .gd-badge-meta {
-                  display: none;
-              }
-        }
-    }
-      
-    //   .chm-branch-name .geodir-linked-posts .geodir_location_listing, .chm-branch-name .geodir-linked-posts .geodir_location_listing ul li .geodir-post-title  {
-    //     display: inline-block;
-    //   }
-      
-    //   .chm-branch-name .geodir-linked-posts .geodir_location_listing ul li, .chm-branch-name .geodir-linked-posts .geodir_location_listing ul li .gd-list-item-right  {
-    //     display: inline;
-    //     width: auto;
-    //     padding: 0;
-    //     margin: 0;
-    //     vertical-align: baseline;
-    //   }
-      
-    //   .chm-branch-name .geodir-linked-posts .geodir_location_listing ul li h2 {
-    //     font-size: 18px;
-    //   }
-      
-    //   .chm-branch-name .geodir-linked-posts .geodir_location_listing .gd-list-item-left, .chm-branch-name .geodir-linked-posts .geodir_location_listing .geodir-post-meta-container, .chm-branch-name .geodir-linked-posts .geodir_location_listing .gd-badge-meta  {
-    //     display: none;
-    //   }
+	}
+
+	.chm-branch-name {
+		.geodir-linked-posts {
+			padding-top: 5px;
+
+			h4,
+			.geodir_location_listing,
+			.geodir-post-title {
+				display: inline-block
+			}
+
+			ul li,
+			.gd-list-item-right {
+				display: inline;
+				width: auto;
+				padding: 0 !important;
+				margin: 0;
+				vertical-align: baseline;
+			}
+
+			h2 {
+				font-size: 18px;
+			}
+
+			.gd-list-item-left,
+			.geodir-post-meta-container,
+			.gd-badge-meta {
+				display: none;
+			}
+		}
+	}
+
+	//   .chm-branch-name .geodir-linked-posts .geodir_location_listing, .chm-branch-name .geodir-linked-posts .geodir_location_listing ul li .geodir-post-title  {
+	//     display: inline-block;
+	//   }
+
+	//   .chm-branch-name .geodir-linked-posts .geodir_location_listing ul li, .chm-branch-name .geodir-linked-posts .geodir_location_listing ul li .gd-list-item-right  {
+	//     display: inline;
+	//     width: auto;
+	//     padding: 0;
+	//     margin: 0;
+	//     vertical-align: baseline;
+	//   }
+
+	//   .chm-branch-name .geodir-linked-posts .geodir_location_listing ul li h2 {
+	//     font-size: 18px;
+	//   }
+
+	//   .chm-branch-name .geodir-linked-posts .geodir_location_listing .gd-list-item-left, .chm-branch-name .geodir-linked-posts .geodir_location_listing .geodir-post-meta-container, .chm-branch-name .geodir-linked-posts .geodir_location_listing .gd-badge-meta  {
+	//     display: none;
+	//   }
 
 	.chm-branch-licenses {
 		.widgettitle {

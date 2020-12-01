@@ -3,10 +3,13 @@
 (function ($) {
   $(document).ready(function () {
     // Loan Calculator JS
-    // Init
-    calcLoan(); // Loan changes
+    if ($('#loan-calculator').length) {
+      // Init
+      calcLoan(); // Loan changes
 
-    $("#loan-calculator input").change(calcLoan).keyup(calcLoan);
+      $("#loan-calculator input").change(calcLoan).keyup(calcLoan);
+    }
+
     $("form.geodir-listing-search").each(function (i) {
       // If CPT Select is not active, look for stype in an input
       var stype = $(this).find("input[name='stype']").val();
@@ -169,8 +172,7 @@
 
   $('#loan-calculator input.number').keyup(function (event) {
     // skip for arrow keys
-    if (event.which >= 37 && event.which <= 40) return;
-    console.log("COMMAS"); // format number
+    if (event.which >= 37 && event.which <= 40) return; // format number
 
     $(this).val(function (index, value) {
       return value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");

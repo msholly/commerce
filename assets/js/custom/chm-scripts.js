@@ -5,11 +5,13 @@
 	$(document).ready(function () {
 
 		// Loan Calculator JS
-		// Init
-		calcLoan();
+		if ($('#loan-calculator').length) {
+			// Init
+			calcLoan();
 
-		// Loan changes
-		$("#loan-calculator input").change(calcLoan).keyup(calcLoan);
+			// Loan changes
+			$("#loan-calculator input").change(calcLoan).keyup(calcLoan);
+		}
 
 		$("form.geodir-listing-search").each(function (i) {
 			// If CPT Select is not active, look for stype in an input
@@ -163,7 +165,7 @@
 	});
 
 	var calcLoan = debounce(function () {
-        
+
 		var e = parseFloat($("#loan-amount").val().replace(/\D/g, "")),
 			t = parseFloat($("#loan-interest-rate").val()),
 			n = parseFloat($("#loan-years").val());
@@ -173,21 +175,20 @@
 				var i = t / 100 / 12 * e / (1 - Math.pow(1 + t / 100 / 12, 12 * -n));
 				$("#loan-monthly-payment").text("$" + i.toFixed(0).replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","));
 			} else {
-                $("#loan-monthly-payment").text("")
+				$("#loan-monthly-payment").text("")
 			}
 
 		} else
 			$("#loan-monthly-payment").text("")
 	}, 250);
 
-    // $( "#loan-calculator" ).submit(function( event ) {
-    //     event.preventDefault();
-    //   });
+	// $( "#loan-calculator" ).submit(function( event ) {
+	//     event.preventDefault();
+	//   });
 
 	$('#loan-calculator input.number').keyup(function (event) {
 		// skip for arrow keys
 		if (event.which >= 37 && event.which <= 40) return;
-        console.log("COMMAS")
 
 		// format number
 		$(this).val(function (index, value) {
@@ -195,8 +196,8 @@
 				.replace(/\D/g, "")
 				.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 		});
-    });
-    
+	});
+
 
 	$('.geodir-search-container').on('change', 'select', function () {
 		removeGdCpt();

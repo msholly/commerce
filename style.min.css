@@ -208,6 +208,18 @@ body.page-id-3621 .geodir-listings .geodir-linked-posts .geodir-linked-posts{dis
 .mapsvg-popover .mapsvg-controller-view-content h4{background-color:#464646;color:#FFF;padding:10px 15px;position:fixed;width:100%;top:20px;left:0}
 .mapsvg-popover .mapsvg-controller-view-content h5{padding:0}
 .mapsvg-popover .mapsvg-controller-view-content h5>a{padding:10px 15px;display:block}
+#loan-calculator{background-color:#52626f;padding:25px}
+#loan-calculator h4{color:#FFF}
+#loan-calculator label{color:#FFF}
+#loan-calculator .input-group{display:-webkit-box;display:-ms-flexbox;display:flex;padding-left:0;position:relative;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;width:100%;margin-bottom:15px}
+#loan-calculator .input-group .form-control{display:block;padding:16px;font-size:1rem;font-weight:400;line-height:1.5;color:#000;background-color:#fff;background-clip:padding-box;-webkit-transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;transition:border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;position:relative;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;width:1%;min-width:0;margin-bottom:0}
+#loan-calculator .input-group .form-control.focus-visible+.input-group-append .input-group-text{border-color:#2d3940;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out}
+#loan-calculator .input-group .input-group-append{display:-webkit-box;display:-ms-flexbox;display:flex;margin-left:-1px}
+#loan-calculator .input-group .input-group-append .input-group-text{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:.375rem .75rem;margin-bottom:0;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;text-align:center;white-space:nowrap;background-color:#f1f1f1;border:1px solid #bbb}
+#loan-calculator .loan-interest-rate .form-control{border-right:1px solid transparent !important}
+#loan-calculator .answer-group{color:#FFF}
+#loan-calculator .answer-group .loan-monthly-payment-label{display:block;text-transform:uppercase}
+#loan-calculator .answer-group #loan-monthly-payment{display:block;font-size:36px;min-height:49px;line-height:normal}
 @media(min-width:576px){.d-sm-none{display:none !important}
 .d-sm-inline{display:inline !important}
 .d-sm-inline-block{display:inline-block !important}

@@ -2,6 +2,11 @@
 
 (function ($) {
   $(document).ready(function () {
+    // Loan Calculator JS
+    // Init
+    calcLoan(); // Loan changes
+
+    $("#loan-calculator input").change(calcLoan).keyup(calcLoan);
     $("form.geodir-listing-search").each(function (i) {
       // If CPT Select is not active, look for stype in an input
       var stype = $(this).find("input[name='stype']").val();
@@ -145,6 +150,32 @@
       });
     }
   });
+  var calcLoan = debounce(function () {
+    var e = parseFloat($("#loan-amount").val().replace(/\D/g, "")),
+        t = parseFloat($("#loan-interest-rate").val()),
+        n = parseFloat($("#loan-years").val());
+
+    if ($.isNumeric(e) && $.isNumeric(t) && $.isNumeric(n)) {
+      if (e > 5000) {
+        var i = t / 100 / 12 * e / (1 - Math.pow(1 + t / 100 / 12, 12 * -n));
+        $("#loan-monthly-payment").text("$" + i.toFixed(0).replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+      } else {
+        $("#loan-monthly-payment").text("");
+      }
+    } else $("#loan-monthly-payment").text("");
+  }, 250); // $( "#loan-calculator" ).submit(function( event ) {
+  //     event.preventDefault();
+  //   });
+
+  $('#loan-calculator input.number').keyup(function (event) {
+    // skip for arrow keys
+    if (event.which >= 37 && event.which <= 40) return;
+    console.log("COMMAS"); // format number
+
+    $(this).val(function (index, value) {
+      return value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    });
+  });
   $('.geodir-search-container').on('change', 'select', function () {
     removeGdCpt(); // On /search page, watch CPT Select and update wrapper with current active search type
 
@@ -244,5 +275,29 @@
         makeSelect2(sorted);
       }
     });
+  } // Returns a function, that, as long as it continues to be invoked, will not
+  // be triggered. The function will be called after it stops being called for
+  // N milliseconds. If `immediate` is passed, trigger the function on the
+  // leading edge, instead of the trailing.
+
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function () {
+      var context = this,
+          args = arguments;
+
+      var later = function later() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
   }
+
+  ;
 })(jQuery);

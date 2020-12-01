@@ -4,6 +4,13 @@
 
 	$(document).ready(function () {
 
+		// Loan Calculator JS
+		// Init
+		calcLoan();
+
+		// Loan changes
+		$("#loan-calculator input").change(calcLoan).keyup(calcLoan);
+
 		$("form.geodir-listing-search").each(function (i) {
 			// If CPT Select is not active, look for stype in an input
 			var stype = $(this).find("input[name='stype']").val();
@@ -61,7 +68,7 @@
 		if ($("body").hasClass("page-id-3621")) {
 			$(".geodir-listings .widgettitle").each(function (i) {
 				var heading = $(this);
-				var headingtext = heading.text().toLowerCase().trim().replace(/[\.,-\/#!?$%\^&\*;:{}=\-_`~()]/g, "").replace(/ +/g,'-');
+				var headingtext = heading.text().toLowerCase().trim().replace(/[\.,-\/#!?$%\^&\*;:{}=\-_`~()]/g, "").replace(/ +/g, '-');
 				heading.attr("id", headingtext);
 			});
 
@@ -95,10 +102,10 @@
 
 		// IF Branch Detail page
 		if ($("body").hasClass("single-gd_place")) {
-            // Adds State to Branch header
-            var state = $("#contact-info [itemprop='addressRegion']").text();
-            $(".chm-branch-name .geodir-page-title").append(", " + state)
-            
+			// Adds State to Branch header
+			var state = $("#contact-info [itemprop='addressRegion']").text();
+			$(".chm-branch-name .geodir-page-title").append(", " + state)
+
 			// Hides a Regional Manager's profile in Our Team if they exist in both Regional Manager and Our Team sections
 			var ourTeamLOs = $(".branch-lo-our-team li.type-gd_loan_officer"),
 				regionalMg = $('.branch-regional-manager li');
@@ -155,6 +162,41 @@
 
 	});
 
+	var calcLoan = debounce(function () {
+        
+		var e = parseFloat($("#loan-amount").val().replace(/\D/g, "")),
+			t = parseFloat($("#loan-interest-rate").val()),
+			n = parseFloat($("#loan-years").val());
+
+		if ($.isNumeric(e) && $.isNumeric(t) && $.isNumeric(n)) {
+			if (e > 5000) {
+				var i = t / 100 / 12 * e / (1 - Math.pow(1 + t / 100 / 12, 12 * -n));
+				$("#loan-monthly-payment").text("$" + i.toFixed(0).replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+			} else {
+                $("#loan-monthly-payment").text("")
+			}
+
+		} else
+			$("#loan-monthly-payment").text("")
+	}, 250);
+
+    // $( "#loan-calculator" ).submit(function( event ) {
+    //     event.preventDefault();
+    //   });
+
+	$('#loan-calculator input.number').keyup(function (event) {
+		// skip for arrow keys
+		if (event.which >= 37 && event.which <= 40) return;
+        console.log("COMMAS")
+
+		// format number
+		$(this).val(function (index, value) {
+			return value
+				.replace(/\D/g, "")
+				.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		});
+    });
+    
 
 	$('.geodir-search-container').on('change', 'select', function () {
 		removeGdCpt();
@@ -227,11 +269,11 @@
 			url: document.location.origin + "/wp-json/geodir/v2/licenses?per_page=50",
 			data: ({}),
 			success: function (data) {
-                
+
 				var formatted = $.map(data, function (obj) {
 					obj.id = obj.slug; // unique ID needed for select2
-                    obj.text = obj.state_abbreviation + " - " + obj.region // title needed for proper search
-                    console.log(obj.text)
+					obj.text = obj.state_abbreviation + " - " + obj.region // title needed for proper search
+					console.log(obj.text)
 					return obj;
 				});
 
@@ -244,12 +286,33 @@
 						return 1;
 					}
 					return 0;
-                });
-                
-                console.log(sorted)
+				});
+
+				console.log(sorted)
 				makeSelect2(sorted);
 			}
 		});
 	}
+
+	// Returns a function, that, as long as it continues to be invoked, will not
+	// be triggered. The function will be called after it stops being called for
+	// N milliseconds. If `immediate` is passed, trigger the function on the
+	// leading edge, instead of the trailing.
+	function debounce(func, wait, immediate) {
+		var timeout;
+		return function () {
+			var context = this,
+				args = arguments;
+			var later = function () {
+				timeout = null;
+				if (!immediate) func.apply(context, args);
+			};
+			var callNow = immediate && !timeout;
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+			if (callNow) func.apply(context, args);
+		};
+	};
+
 
 })(jQuery);

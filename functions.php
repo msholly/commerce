@@ -8,7 +8,10 @@ function theme_enqueue_styles()
 }
 
 // Shortcode for Select2 Search
-require_once 'includes/search-shortcode.php';
+// require_once 'includes/search-shortcode.php';
+
+// Shortcode for Loan Calculator
+require_once 'includes/loan-calc-shortcode.php';
 
 // Geo Directory State Abbreviation change 
 require_once 'includes/gd-state-abbrev.php';

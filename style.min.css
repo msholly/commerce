@@ -209,6 +209,7 @@ body.page-id-3621 .geodir-listings .geodir-linked-posts .geodir-linked-posts{dis
 .mapsvg-popover .mapsvg-controller-view-content h5{padding:0}
 .mapsvg-popover .mapsvg-controller-view-content h5>a{padding:10px 15px;display:block}
 #loan-calculator{background-color:#52626f;padding:25px}
+#loan-calculator ul{list-style-type:none !important;padding:0 0 15px 0}
 #loan-calculator h4{color:#FFF}
 #loan-calculator label{color:#FFF}
 #loan-calculator .input-group{display:-webkit-box;display:-ms-flexbox;display:flex;padding-left:0;position:relative;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;width:100%;margin-bottom:15px}

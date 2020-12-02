@@ -221,6 +221,15 @@ body.page-id-3621 .geodir-listings .geodir-linked-posts .geodir-linked-posts{dis
 #loan-calculator .answer-group{color:#FFF}
 #loan-calculator .answer-group .loan-monthly-payment-label{display:block;text-transform:uppercase}
 #loan-calculator .answer-group #loan-monthly-payment{display:block;font-size:36px;min-height:49px;line-height:normal}
+.nf-form-cont .nf-form-content{padding:0}
+.nf-form-cont .nf-form-content input.ninja-forms-field{height:56px}
+.nf-form-cont .nf-form-content input:not([type=button]){border-color:#a6a6a6;background:#FFF}
+.nf-form-cont .nf-form-content textarea{border-color:#a6a6a6;background:#FFF}
+.nf-form-cont .nf-form-content .nf-error.field-wrap .nf-field-element:after{height:54px;line-height:54px}
+.nf-form-cont .nf-form-content .submit-wrap input[type=button]{background-color:#174170;border-width:1px !important;border-radius:50px;font-size:20px;font-weight:500;height:48px;line-height:24px !important;padding:.3em 1em !important;cursor:pointer}
+.nf-form-cont .nf-form-content .submit-wrap input[type=button]:hover{background-color:#00aade;color:#FFF}
+.nf-form-cont#nf-form-4-cont{margin-bottom:40px}
+.nf-form-cont#nf-form-4-cont .nf-form-fields-required{display:none}
 @media(min-width:576px){.d-sm-none{display:none !important}
 .d-sm-inline{display:inline !important}
 .d-sm-inline-block{display:inline-block !important}

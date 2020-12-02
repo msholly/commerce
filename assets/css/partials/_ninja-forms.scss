@@ -1,0 +1,50 @@
+.nf-form-cont {
+	.nf-form-content {
+		padding: 0;
+
+		input {
+			&.ninja-forms-field {
+				height: 56px;
+			}
+
+			&:not([type=button]) {
+				border-color: #a6a6a6;
+				background: #FFF;
+			}
+		}
+
+		textarea {
+			border-color: #a6a6a6;
+			background: #FFF;
+		}
+
+		.nf-error.field-wrap .nf-field-element:after {
+			height: 54px;
+			line-height: 54px;
+		}
+
+		.submit-wrap input[type=button] {
+			background-color: #174170;
+			border-width: 1px !important;
+			border-radius: 50px;
+			font-size: 20px;
+			font-weight: 500;
+			height: 48px;
+			line-height: 24px !important;
+			padding: .3em 1em !important;
+            cursor: pointer;
+            &:hover {
+                background-color: #00aade;
+                color: #FFF;
+            }
+		}
+	}
+
+	&#nf-form-4-cont {
+		margin-bottom: 40px;
+
+		.nf-form-fields-required {
+			display: none;
+		}
+	}
+}

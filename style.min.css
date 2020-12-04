@@ -75,7 +75,6 @@ body.geodir-no-results #main-content .container{max-width:100%;width:100%;paddin
 .chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single .select2-selection__arrow{top:0;right:15px;height:73px}
 .chm-branch-states #select2-ajax-branch+.select2 .select2-selection--single .select2-selection__arrow b{border-color:#174170 transparent transparent transparent}
 .chm-branch-states .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #174170 transparent !important}
-body.geodir-page-search #main-content,body.geodir-page-location #main-content{background-image:url(https://chmretaildev.wpengine.com/wp-content/uploads/bg-branches.jpg);background-repeat:no-repeat;background-position:top center;background-size:contain}
 body.geodir-page-search .geodir-category-list-view .geodir-image-container ul.geodir-images,body.geodir-page-location .geodir-category-list-view .geodir-image-container ul.geodir-images{text-align:center}
 body.geodir-page-search .geodir-category-list-view .geodir-image-container ul.geodir-images li,body.geodir-page-location .geodir-category-list-view .geodir-image-container ul.geodir-images li{border-radius:50%;padding-bottom:21% !important;max-width:200px;max-height:200px}
 body.geodir-page-search .geodir-category-list-view .gd-list-item-right,body.geodir-page-location .geodir-category-list-view .gd-list-item-right{text-align:center}

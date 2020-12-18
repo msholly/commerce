@@ -42,7 +42,7 @@
 .d-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
 .et_pb_text_inner h1{font-size:42px !important;padding-bottom:45px}
 .et_pb_text_inner h2{font-size:34px !important;padding-bottom:15px}
-.et_pb_text_inner h3{font-size:28px !important;padding-bottom:75px}
+.et_pb_text_inner h3{font-size:28px !important;padding-bottom:25px}
 .et_pb_text_inner h4{font-size:30px !important}
 .flex-row-wrapper .et_pb_column{display:-webkit-box;display:-ms-flexbox;display:flex}
 .et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post{width:100%}
@@ -274,7 +274,11 @@ body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-po
 }@media(max-width:1180px){#et_mobile_nav_menu{display:block}
 #top-menu{display:none}
 }@media screen and (max-width:981px){.flex-row-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-}@media only screen and (max-width:980px){.et_pb_row{width:90%}
+}@media only screen and (max-width:980px){.et_pb_text_inner h1{font-size:32px !important;padding-bottom:35px}
+.et_pb_text_inner h2{font-size:24px !important;padding-bottom:10px}
+.et_pb_text_inner h3{font-size:18px !important;padding-bottom:20px}
+.et_pb_text_inner h4{font-size:20px !important}
+.et_pb_row{width:90%}
 }@media screen and (max-width:812px){.mapsvg-popover .mapsvg-controller-view-content h4{top:0}
 }@media all and (max-width:479px){.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-featured-image-url,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .entry-title,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-meta,.et_pb_module.image-on-the-left .et_pb_ajax_pagination_container article.et_pb_post .post-content{width:100%;float:none}
 .chm-search h2{font-size:20px}

@@ -12,9 +12,29 @@
     }
     h3 {
         font-size: 28px !important;
-        padding-bottom: 75px;
+        padding-bottom: 25px;
     }
     h4 {
         font-size: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .et_pb_text_inner {
+        h1 {
+            font-size: 32px !important;
+            padding-bottom: 35px;
+        }
+        h2 {
+            font-size: 24px !important;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 18px !important;
+            padding-bottom: 20px;
+        }
+        h4 {
+            font-size: 20px !important;
+        }
     }
 }

@@ -147,13 +147,15 @@ body.single-gd_loan_officer .lo-contact-info .contact-info a{color:#174170 !impo
 body.post-type-archive-gd_place .geodir-field-city{display:inline}
 body.post-type-archive-gd_place .geodir-field-region{display:inline}
 body.post-type-archive-gd_place .geodir-field-zip{display:inline}
-body.single-gd_place .geodir-field-business_hours{padding-top:10px}
-body.single-gd_place .chm-branch-name .geodir-linked-posts{padding-top:5px}
-body.single-gd_place .chm-branch-name .geodir-linked-posts h4,body.single-gd_place .chm-branch-name .geodir-linked-posts .geodir_location_listing,body.single-gd_place .chm-branch-name .geodir-linked-posts .geodir-post-title{display:inline-block}
+body.single-gd_place .geodir-field-business_hours{padding-top:10px;font-size:16px}
+body.single-gd_place .chm-branch-name .geodir-page-title{font-size:32px !important}
+body.single-gd_place .chm-branch-name .geodir-linked-posts{padding:10px 0}
+body.single-gd_place .chm-branch-name .geodir-linked-posts h4,body.single-gd_place .chm-branch-name .geodir-linked-posts .geodir_location_listing,body.single-gd_place .chm-branch-name .geodir-linked-posts .geodir-post-title{font-size:22px !important;display:inline-block;color:#174170 !important}
 body.single-gd_place .chm-branch-name .geodir-linked-posts ul li,body.single-gd_place .chm-branch-name .geodir-linked-posts .gd-list-item-right{display:inline;width:auto;padding:0 !important;margin:0;vertical-align:baseline}
-body.single-gd_place .chm-branch-name .geodir-linked-posts h2{font-size:18px}
+body.single-gd_place .chm-branch-name .geodir-linked-posts h2{font-size:22px !important;font-weight:500}
 body.single-gd_place .chm-branch-name .geodir-linked-posts .gd-list-item-left,body.single-gd_place .chm-branch-name .geodir-linked-posts .geodir-post-meta-container,body.single-gd_place .chm-branch-name .geodir-linked-posts .gd-badge-meta{display:none}
-body.single-gd_place .chm-branch-licenses .widgettitle{display:inline-block;padding-bottom:5px}
+body.single-gd_place .geodir-field-address{font-size:18px !important;color:#174170 !important;font-weight:500}
+body.single-gd_place .chm-branch-licenses .widgettitle{display:inline-block;padding-bottom:5px;font-size:18px !important}
 body.single-gd_place .chm-branch-licenses .geodir_location_listing{display:inline}
 body.single-gd_place .chm-branch-licenses .geodir_location_listing .geodir-category-list-view .gd_license{margin:0 !important;padding:0 !important;display:inline;width:unset}
 body.single-gd_place .chm-branch-licenses .geodir_location_listing .geodir-category-list-view .gd_license .geodir_post_meta{display:inline;font-size:14px}
@@ -240,6 +242,7 @@ body.page-id-3621 .geodir-listings .geodir-linked-posts .geodir-linked-posts{dis
 .d-sm-table-cell{display:table-cell !important}
 .d-sm-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
 .d-sm-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
+}@media screen and (min-width:600px){body.single-gd_place .chm-branch-name .geodir-page-title{font-size:48px !important}
 }@media(min-width:768px){.d-md-none{display:none !important}
 .d-md-inline{display:inline !important}
 .d-md-inline-block{display:inline-block !important}

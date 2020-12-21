@@ -576,15 +576,15 @@ body.single-gd_loan_officer {
 				font-size: 14px;
 				line-height: 22px;
 				margin-bottom: 5px;
-            }
-            
-            .geodir-category-list-view .gd_place  {
-                // border-bottom: 1px solid #A6A6A6;
-                margin-bottom: 15px;
-                padding-bottom: 15px !important;
-            }
+			}
 
-			.geodir-linked-posts {                
+			.geodir-category-list-view .gd_place {
+				// border-bottom: 1px solid #A6A6A6;
+				margin-bottom: 15px;
+				padding-bottom: 15px !important;
+			}
+
+			.geodir-linked-posts {
 				.widgettitle {
 					font-size: 16px;
 					color: #333 !important;
@@ -655,16 +655,27 @@ body.post-type-archive-gd_place {
 body.single-gd_place {
 	.geodir-field-business_hours {
 		padding-top: 10px;
+		font-size: 16px;
 	}
 
 	.chm-branch-name {
+		.geodir-page-title {
+			font-size: 32px !important;
+
+			@media screen and (min-width: 600px) {
+				font-size: 48px !important;
+			}
+		}
+
 		.geodir-linked-posts {
-			padding-top: 5px;
+			padding: 10px 0;
 
 			h4,
 			.geodir_location_listing,
 			.geodir-post-title {
-				display: inline-block
+				font-size: 22px !important;
+				display: inline-block;
+				color: #174170 !important;
 			}
 
 			ul li,
@@ -677,7 +688,8 @@ body.single-gd_place {
 			}
 
 			h2 {
-				font-size: 18px;
+				font-size: 22px !important;
+				font-weight: 500;
 			}
 
 			.gd-list-item-left,
@@ -686,6 +698,12 @@ body.single-gd_place {
 				display: none;
 			}
 		}
+	}
+
+	.geodir-field-address {
+		font-size: 18px !important;
+		color: #174170 !important;
+		font-weight: 500;
 	}
 
 	//   .chm-branch-name .geodir-linked-posts .geodir_location_listing, .chm-branch-name .geodir-linked-posts .geodir_location_listing ul li .geodir-post-title  {
@@ -712,6 +730,7 @@ body.single-gd_place {
 		.widgettitle {
 			display: inline-block;
 			padding-bottom: 5px;
+			font-size: 18px !important;
 		}
 
 		.geodir_location_listing {

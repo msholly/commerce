@@ -226,9 +226,9 @@ Version: 0.1
 
 .et_pb_text_inner h4 { font-size: 30px !important; }
 
-@media only screen and (max-width: 980px) { .et_pb_text_inner h1 { font-size: 28px !important; padding-bottom: 30px; }
-  .et_pb_text_inner h2 { font-size: 20px !important; padding-bottom: 10px; }
-  .et_pb_text_inner h3 { font-size: 16px !important; padding-bottom: 18px; }
+@media only screen and (max-width: 980px) { .et_pb_text_inner h1 { font-size: 36px !important; padding-bottom: 30px; }
+  .et_pb_text_inner h2 { font-size: 30px !important; padding-bottom: 10px; }
+  .et_pb_text_inner h3 { font-size: 22px !important; padding-bottom: 18px; }
   .et_pb_text_inner h4 { font-size: 18px !important; } }
 
 /*------------------------------------------------*/

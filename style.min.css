@@ -277,9 +277,9 @@ body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-po
 }@media(max-width:1180px){#et_mobile_nav_menu{display:block}
 #top-menu{display:none}
 }@media screen and (max-width:981px){.flex-row-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-}@media only screen and (max-width:980px){.et_pb_text_inner h1{font-size:28px !important;padding-bottom:30px}
-.et_pb_text_inner h2{font-size:20px !important;padding-bottom:10px}
-.et_pb_text_inner h3{font-size:16px !important;padding-bottom:18px}
+}@media only screen and (max-width:980px){.et_pb_text_inner h1{font-size:36px !important;padding-bottom:30px}
+.et_pb_text_inner h2{font-size:30px !important;padding-bottom:10px}
+.et_pb_text_inner h3{font-size:22px !important;padding-bottom:18px}
 .et_pb_text_inner h4{font-size:18px !important}
 .et_pb_row{width:90%}
 }@media screen and (max-width:812px){.mapsvg-popover .mapsvg-controller-view-content h4{top:0}

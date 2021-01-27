@@ -56,15 +56,6 @@ padding: 0 !important;
 #top-menu .menu-item-has-children > a:first-child:after{content: ''; margin-top: -2px;}
 #top-menu .menu-item-has-children {padding-right: 0px;}
 
-/*changes the main menu mobile break-point*/
- @media (max-width: 1180px) {
-    #et_mobile_nav_menu {
-        display: block;
-    }
-    #top-menu {
-        display: none;
-    }
- } 
 #et-top-navigation #top-menu li.show-submenu ul.sub-menu { padding-left:30px; }
 
 /*** MEGA MENU ***/

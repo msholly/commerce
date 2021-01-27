@@ -274,8 +274,6 @@ body.single-gd_loan_officer .lo-contact-info .geodir_location_listing .geodir-po
 .d-xl-table-cell{display:table-cell !important}
 .d-xl-flex{display:-webkit-box !important;display:-ms-flexbox !important;display:flex !important}
 .d-xl-inline-flex{display:-webkit-inline-box !important;display:-ms-inline-flexbox !important;display:inline-flex !important}
-}@media(max-width:1180px){#et_mobile_nav_menu{display:block}
-#top-menu{display:none}
 }@media screen and (max-width:981px){.flex-row-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 }@media only screen and (max-width:980px){.et_pb_text_inner h1{font-size:36px !important;padding-bottom:30px}
 .et_pb_text_inner h2{font-size:30px !important;padding-bottom:10px}

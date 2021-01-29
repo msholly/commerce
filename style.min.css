@@ -94,7 +94,7 @@ body.geodir-page-search .geodir-category-list-view .geodir-linked-posts .gd_lice
 .osx.et_mobile_device .overlay .entry-content .et_pb_section .et_pb_row.chm-search{top:0 !important}
 .geodir-post-meta-container{display:inline}
 .geodir_post_meta_icon i{min-width:16px;text-align:center;margin-right:7px}
-body.single-gd_loan_officer .lo-main-image .et_pb_image_wrap{max-height:250px;max-width:250px}
+body.single-gd_loan_officer .lo-main-image .et_pb_image_wrap{max-height:250px;max-width:250px;background-color:#FFF}
 body.single-gd_loan_officer .lead h3{padding-bottom:1em;line-height:1.5em}
 body.single-gd_loan_officer .lead p{line-height:2em;font-size:16px}
 body.single-gd_loan_officer .gd-badge-meta.chm-cta{display:block}
